@@ -32,3 +32,27 @@ p {
     font-size: 90%;
 }
 
+/*-------------------------------------------------Why SA blocks*/
+
+.why-sa {
+    margin-top: 30px;
+}
+
+/*-------------------------------------------------Testimonials*/
+
+.testimonial-col img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.circle-testimonial {
+    border-radius: 50%;
+    border: 5px #fe7fbf solid;
+    margin-left: 15px;
+    display: inline-block;
+}
+
+.quote-body {
+    margin-left: 15px;
+    display: inline-block;
+}
