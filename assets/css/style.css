@@ -1,3 +1,6 @@
+@charset "utf-8";
+/* CSS Document */
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600|Ubuntu:300,500,700&display=swap');
 
 * {
@@ -5,23 +8,194 @@
     padding: 0;
     border: 0;
 }
+
+.inline-block {
+  display: inline-block;
+}
+
+.row-table {
+  display: table;
+}
+
+.section-column {
+  display: table-cell;
+  padding: 0 30px 30px;
+  float: none;
+}
+
 /*-------------------------------------------------Colours*/
 
+.bg-color-title {
+    background-color: #313131;
+}
 
+.nav-color-enquire {
+  border-bottom: 10px #fe7fbf solid;
+}	
+    
+.nav-color-accommodation {
+  border-bottom: 10px #38e6fe solid;
+}	
+
+.nav-color-experience {
+  border-bottom: 10px #fee123 solid;
+}	
+
+.nav-color-courses {
+  border-bottom: 10px #a1ef82 solid;
+}	
+
+.why-sa-row {
+    background-color: #595858;
+}
 
 /*-------------------------------------------------Headings*/
 
-h1 {
+h1, h2, h3, h4, h5 {
     font-family: "Ubuntu";
-    letter-spacing: 2px;
     color: #000;
-    font-size: 150%;
-    font-weight: 700;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 110%;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.list-inline-item:not(:last-child) {
+  margin: 0;
+}
+
+.menucontainer {
+  font-size: 0;
+}
+
+.why-sa-row h2 {
+    text-align: center;
+    font-size: 200%;
+    color: #fafafa;
+}
+
+/*-------------------------------------------------Navigation bar*/
+
+#logo {
+    margin-bottom: 30px;
+}
+
+#logo h1 {
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: #fff;
+    display: inline;
+}
+
+#logo-img {
+    width: 50px;
+    height: 50px;
+    display: inline;
+    margin: 30px 10px 30px 30px;
 }
 
 
 
+#menu {
+    float: right;
+}
+
+.menu-container {
+    width: 100%;
+}
+
+#nav li {
+  font-size: 14px;
+  padding: 0;
+}
+
+#nav {
+  margin: 0px;
+}
+
+.nav-item {
+  height: 120px;
+  text-align: center;
+  padding: 0;
+  position: relative;
+}
+
+.border-left {
+  border-left: 1px #1c1c1c solid !important;
+  position: absolute;
+  top: 0%;
+  bottom: 1%;
+  width: 100%
+}
+
+.nav-item a {
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+  height: 120px;
+}
+
+.nav-item a i {
+  padding: 22px;
+  display: block;
+  color: #fafafa;
+  font-size: 20px;
+}
+
+.nav-item span {
+  display: block;
+  width: 100%;
+  padding-top: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+/*-------------------------------------------------Banner image*/
+
+#hero-image {
+        height: 460px;
+        width: 100%;
+        background: url('/assets/img/bokaap.jpg') no-repeat center center; 
+        border-bottom: #a1ef82 10px solid;
+}
+
+#hero-container {
+        height: 460px;
+        width: 100%;
+}
+
+/*This is a container with background image
+
+
+#overlay-text, #overlay-text h2 { 
+        color: #ffffff;
+}
+
+#overlay-text {
+        float: left;
+        font-size: 130%;
+        font-family: "Ubuntu";
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        width: 300px;
+        height: 150px;
+        padding-top: 40px;
+        padding-left: 10px;
+        background-color: rgba(161, 239, 130, .8);
+        bottom: 30px;
+        left: 20px;
+        position: absolute;
+}*/
+
 /*-------------------------------------------------General*/
+
 body {
     font-family: "Montserrat";
     color: #000;
@@ -36,6 +210,10 @@ p {
 
 .why-sa {
     margin-top: 30px;
+}
+
+.why-sa-row {
+    padding: 20px 30px 20px 30px;
 }
 
 /*-------------------------------------------------Testimonials*/
