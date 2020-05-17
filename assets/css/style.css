@@ -29,23 +29,23 @@
     background-color: #313131;
 }
 
-.nav-color-enquire {
+.border-bottom--pink {
   border-bottom: 10px #fe7fbf solid;
 }	
     
-.nav-color-accommodation {
+.border-bottom--blue {
   border-bottom: 10px #38e6fe solid;
 }	
 
-.nav-color-experience {
-  border-bottom: 10px #fee123 solid;
+.border-bottom--yellow {
+  border-bottom: 10px #f9e038 solid;
 }	
 
-.nav-color-courses {
+.border-bottom--green {
   border-bottom: 10px #a1ef82 solid;
 }	
 
-.why-sa-row {
+.row__why-sa {
     background-color: #595858;
 }
 
@@ -53,7 +53,6 @@
 
 h1, h2, h3, h4, h5 {
     font-family: "Ubuntu";
-    color: #000;
     margin-top: 20px;
 }
 
@@ -64,18 +63,12 @@ h1 {
     text-transform: uppercase;
 }
 
-.list-inline-item:not(:last-child) {
-  margin: 0;
-}
-
-.menucontainer {
-  font-size: 0;
-}
-
-.why-sa-row h2 {
-    text-align: center;
+h2 {
     font-size: 200%;
-    color: #fafafa;
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+    font-weight: 500;
+    color: #495057;
 }
 
 /*-------------------------------------------------Navigation bar*/
@@ -97,8 +90,6 @@ h1 {
     display: inline;
     margin: 30px 10px 30px 30px;
 }
-
-
 
 #menu {
     float: right;
@@ -157,6 +148,96 @@ h1 {
   letter-spacing: 2px;
 }
 
+.list-inline-item:not(:last-child) {
+  margin: 0;
+}
+
+.menucontainer {
+  font-size: 0;
+}
+
+.nav__courses:hover {
+    background-color: #53a333;
+    transition: all .30s ease-in-out;
+    -moz-transition: all .30s ease-in-out;
+    -webkit-transition: all .30s ease-in-out;
+    -o-transition: all .30s ease-in-out;
+}
+
+.nav__accommodation:hover {
+    background-color: #1c8da5;
+    transition: all .30s ease-in-out;
+    -moz-transition: all .30s ease-in-out;
+    -webkit-transition: all .30s ease-in-out;
+    -o-transition: all .30s ease-in-out;
+}
+
+.nav__experience:hover {
+    background-color: #D4AF37;
+    transition: all .30s ease-in-out;
+    -moz-transition: all .30s ease-in-out;
+    -webkit-transition: all .30s ease-in-out;
+    -o-transition: all .30s ease-in-out;
+}
+
+.nav__enquire:hover {
+    background-color: #b43c78;
+    transition: all .30s ease-in-out;
+    -moz-transition: all .30s ease-in-out;
+    -webkit-transition: all .30s ease-in-out;
+    -o-transition: all .30s ease-in-out;
+}
+
+/*-------------------------------------------------Buttons*/
+
+.btn-outline__enquire {
+    color: #fe7fbf;
+    border-color: #fe7fbf;
+    border-width: 2px;
+}
+
+.btn-outline__enquire:hover {
+    color: #fff;
+    background-color: #b43c78;
+    border-color: #b43c78;
+}
+
+.btn-outline__experience {
+    color: #f9e038;
+    border-color: #f9e038;
+    border-width: 2px;
+}
+
+.btn-outline__experience:hover {
+    color: #fff;
+    background-color: #D4AF37;
+    border-color: #D4AF37;
+}
+
+.btn-outline__courses {
+    color: #a1ef82;
+    border-color: #a1ef82;
+    border-width: 2px;
+}
+
+.btn-outline__courses:hover {
+    color: #fff;
+    background-color: #53a333;
+    border-color: #53a333;
+}
+
+.btn {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.btn:hover{
+    transition: all .30s ease-in-out;
+    -moz-transition: all .30s ease-in-out;
+    -webkit-transition: all .30s ease-in-out;
+    -o-transition: all .30s ease-in-out;
+}
+
 /*-------------------------------------------------Banner image*/
 
 #hero-image {
@@ -206,31 +287,171 @@ p {
     font-size: 90%;
 }
 
-/*-------------------------------------------------Why SA blocks*/
+/*-------------------------------------------------Why SA section*/
 
 .why-sa {
     margin-top: 30px;
 }
 
-.why-sa-row {
+.row__why-sa {
     padding: 20px 30px 20px 30px;
 }
 
-/*-------------------------------------------------Testimonials*/
+.row__why-sa h2 {
+    color: #fafafa;
+}
 
-.testimonial-col img {
-    margin-top: 20px;
+.row__why-sa h3 {
+    text-align: center;
+    font-size: 150%;
+    color: #fafafa;
     margin-bottom: 20px;
 }
 
-.circle-testimonial {
+.row__why-sa p {
+    text-align: center;
+    font-size: 100%;
+    color: #fafafa;  
+}
+
+.row__why-sa i {
+  padding: 22px 0px 10px 0px;
+  display: block;
+  font-size: 35px;
+  text-align: center;
+}
+
+.row__why-sa .fa-user-graduate {
+    color: #a1ef82;
+}
+
+.row__why-sa .fa-paw {
+    color: #f9e038;
+}
+
+.row__why-sa .fa-comments {
+    color: #fe7fbf;
+}
+
+.row__why-sa div {
+    text-align: center;
+}
+
+.row__why-sa img {
+    border-radius: .22rem;
+}
+
+/*-------------------------------------------------Testimonials section*/
+
+.row__testimonials h2 {
+    color: #495057;
+}
+
+.testimonial-col {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.testimonial-img {
     border-radius: 50%;
-    border: 5px #fe7fbf solid;
-    margin-left: 15px;
+    border: 5px #38e6fe solid;
+    margin: 0px 15px 20px 15px;
     display: inline-block;
 }
 
 .quote-body {
     margin-left: 15px;
     display: inline-block;
+}
+
+/* On screens that are 600px or less, the tesimonial text will display below the image*/
+@media screen and (max-width: 768px) {
+
+    .testimonial-col {
+        display: block;
+        text-align: center;
+    }
+
+    .testimonial-img {
+         margin-left: auto;
+         margin-right: auto;
+    }
+
+    .testimonial-col p {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .quote-body {
+        margin-left: 0px;
+        display: block;
+    }
+
+}
+
+/*-------------------------------------------------3 Easy Steps section*/
+
+.row__steps {
+    background-color: #ffe0f0;
+    border-top:#fe7fbf 10px solid;
+}
+
+.row__steps p {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.timeline {
+    margin-top: 30px;
+}
+
+p.round-number {
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 700;
+    color: #fff;
+    background-color: #fe7fbf;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    line-height: 18px;
+    padding: 15px;
+    margin: auto;
+}
+
+.row__steps hr {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    border-top: 3px solid #fe7fbf;
+}
+
+.step-3 i {
+    font-size: 28px;
+    color: #fe7fbf;
+}
+
+.row__steps span {
+    padding-left: 20px;
+    font-size: 1em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.center-btn {
+    text-align: center;
+}
+
+/*-------------------------------------------------Footer*/
+
+.row__footer {
+    background-color: #313131;
+    color: #fff;
+    padding: 30px 20px 20px 50px;
+}
+
+.row__footer a {
+    color: #fff;
+    text-decoration: none;
 }

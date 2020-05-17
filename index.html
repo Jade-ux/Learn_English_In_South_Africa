@@ -28,7 +28,7 @@
   <body>
     <header>
       <div class="row no-gutters bg-color-title">
-    <!--Logo-->
+        <!--Logo-->
         <div class="col-md-4">
           <div class="d-inline">
             <a href="/" class="logo">
@@ -41,7 +41,7 @@
             >
           </div>
         </div>
-    <!--Menu-->
+        <!--Menu-->
         <div class="col-md-8">
           <div class="row bg-color-name-title no-gutters">
             <div class="col heading"></div>
@@ -50,43 +50,43 @@
             <div class="col">
               <ul id="nav" class="list-inline menucontainer">
                 <li
-                  class="col-6 col-sm-3 list-inline-item nav-color-courses nav-item"
+                  class="col-6 col-sm-3 list-inline-item border-bottom--green nav-item"
                 >
-                <div class="border-left">
-                  <a href="/index.html"
-                    ><i class="fa fa-user-graduate" aria-hidden="true"></i
-                    ><span>Courses</span></a
-                  >
+                  <div class="border-left nav__courses">
+                    <a href="/index.html"
+                      ><i class="fa fa-user-graduate" aria-hidden="true"></i
+                      ><span>Courses</span></a
+                    >
                   </div>
                 </li>
                 <li
-                  class="col-6 col-sm-3 list-inline-item nav-color-accommodation nav-item"
+                  class="col-6 col-sm-3 list-inline-item border-bottom--blue nav-item"
                 >
-                <div class="border-left">
-                  <a href="/accommodation.html"
-                    ><i class="fa fa-bed" aria-hidden="true"></i
-                    ><span>Accommodation</span></a
-                  >
+                  <div class="border-left nav__accommodation">
+                    <a href="/accommodation.html"
+                      ><i class="fa fa-bed" aria-hidden="true"></i
+                      ><span>Accommodation</span></a
+                    >
                   </div>
                 </li>
                 <li
-                  class="col-6 col-sm-3 list-inline-item nav-color-experience nav-item"
+                  class="col-6 col-sm-3 list-inline-item border-bottom--yellow nav-item"
                 >
-                <div class="border-left">
-                  <a href="/experience.html"
-                    ><i class="fa fa-paw" aria-hidden="true"></i
-                    ><span>Experience</span></a
-                  >
+                  <div class="border-left nav__experience">
+                    <a href="/experience.html"
+                      ><i class="fa fa-paw" aria-hidden="true"></i
+                      ><span>Experience</span></a
+                    >
                   </div>
                 </li>
                 <li
-                  class="col-6 col-sm-3 list-inline-item nav-color-enquire nav-item"
+                  class="col-6 col-sm-3 list-inline-item border-bottom--pink nav-item"
                 >
-                <div class="border-left">
-                  <a href="/enquire.html"
-                    ><i class="fa fa-comment" aria-hidden="true"></i
-                    ><span>Enquire</span></a
-                  >
+                  <div class="border-left nav__enquire">
+                    <a href="/enquire.html" class="hvr-sweep-to-bottom"
+                      ><i class="fa fa-comment" aria-hidden="true"></i
+                      ><span>Enquire</span></a
+                    >
                   </div>
                 </li>
               </ul>
@@ -95,6 +95,7 @@
         </div>
       </div>
     </header>
+    <!--Banner-->
     <section>
       <div class="container-fluid">
         <div class="row">
@@ -109,89 +110,123 @@
         <h2>Experience the vibrant country</h2> 
         </div>
     </section>-->
-    <!--Why South Africa Section-->
+    <!--Why South Africa section-->
     <section>
       <div class="container-fluid">
-      <div class="row why-sa-row">
-        <div class="col-12"><h2>Why Study in South Africa</h2></div>
-        <div class="col-12 col-md-4">
-          <div width="30%">
-            <div class="d-sm-block why-sa">
-              <img
-                src="/assets/img/Courses.jpg"
-                alt="world-class courses"
-                class="image-border-bottom"
-                width="100%"
-              />
-            </div>
-            <div class="d-sm-block"><h3>Heading</h3></div>
-            <div class="d-sm-block">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-4">
-          <div width="30%">
-            <div class="d-sm-block why-sa">
-              <img
-                src="/assets/img/Experience.jpg"
-                alt="world-class courses"
-                class="image-border-bottom"
-                width="100%"
-              />
-            </div>
-            <div class="d-sm-block"><h3>Heading</h3></div>
-            <div class="d-sm-block">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud
-              </p>
+        <div class="row row__why-sa">
+          <div class="col-12"><h2>Why Study in South Africa</h2></div>
+          <div class="col-12 col-md-4">
+            <div width="30%">
+              <div class="d-sm-block why-sa">
+                <img
+                  src="/assets/img/Courses.jpg"
+                  alt="world-class courses"
+                  class="border-bottom--green"
+                  width="100%"
+                />
+              </div>
+              <div class="d-sm-block">
+                <i class="fa fa-user-graduate" aria-hidden="true"></i>
+                <h3>World-class courses</h3>
+              </div>
+              <div class="d-sm-block">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud
+                </p>
+                <div>
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary btn-outline__courses"
+                  >
+                    Get started
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-md-4">
-          <div class="why-SA" width="30%">
-            <div class="d-sm-block why-sa">
-              <img
-                src="/assets/img/Value.jpg"
-                alt="world-class courses"
-                class="image-border-bottom"
-                width="100%"
-              />
-            </div>
-            <div class="d-sm-block"><h3>Heading</h3></div>
-            <div class="d-sm-block">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud
-              </p>
+          <div class="col-12 col-md-4">
+            <div width="30%">
+              <div class="d-sm-block why-sa">
+                <img
+                  src="/assets/img/Experience.jpg"
+                  alt="The Experience"
+                  class="border-bottom--yellow"
+                  width="100%"
+                />
+              </div>
+              <div class="d-sm-block">
+                <i class="fa fa-paw" aria-hidden="true"></i>
+                <h3>The experience</h3>
+              </div>
+              <div class="d-sm-block">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud
+                </p>
+                <div>
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary btn-outline__experience"
+                  >
+                    Get started
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+          <div class="col-12 col-md-4">
+            <div class="why-SA" width="30%">
+              <div class="d-sm-block why-sa">
+                <img
+                  src="/assets/img/Value.jpg"
+                  alt="world-class courses"
+                  class="border-bottom--pink"
+                  width="100%"
+                />
+              </div>
+              <div class="d-sm-block">
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <h3>Accelerate your learning</h3>
+              </div>
+              <div class="d-sm-block">
+                <p>
+                  You will have the opportunity to practise speaking and
+                  understanding English every day simply by speaking to people
+                  you meet, the family you stay with and friends at school.
+                </p>
+                <div>
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary btn-outline__enquire"
+                  >
+                    Get started
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <!--Testimonials section-->
     <section>
-      <div class="row body-row">
-        <!--Testimonial 1-->
-        <div class="col-12 col-m-6 testimonial-col">
-          <div class="media">
-            <div class="d-sm-block">
+      <div class="container-fluid">
+        <div class="row row__testimonials">
+          <div class="col-12"><h2>What other students say</h2></div>
+          <!--Testimonial 1-->
+          <div class="col-sm-6 col-12 testimonial-col">
+            <div class="d-sm-block col-sm-12 col-md-6">
               <img
                 src="assets/img/girl_quote.png"
-                class="circle-testimonial"
+                class="testimonial-img"
                 height="200"
                 width="200"
               />
             </div>
-            <div class="quote-body">
+            <div class="quote-body col-sm-12 col-md-6">
               <blockquote class="blockquote">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -202,14 +237,12 @@
               </blockquote>
             </div>
           </div>
-        </div>
-        <!--Testimonial 2-->
-        <div class="col-12 col-m-6">
-          <div class="media">
+          <!--Testimonial 2-->
+          <div class="col-sm-6 col-12 testimonial-col">
             <div class="d-sm-block">
               <img
                 src="assets/img/boy_quote.png"
-                class="circle-testimonial"
+                class="testimonial-img"
                 height="200"
                 width="200"
               />
@@ -228,6 +261,126 @@
         </div>
       </div>
     </section>
+    <!--3 Easy Steps section-->
+    <section>
+      <div class="container-fluid">
+        <div class="row row__steps">
+          <div class="col-12">
+            <h2>Get started in 3 easy steps</h2>
+            <p>
+              We help you find the best course for you and book your course,
+              accommodation and any activities in 3 easy steps.
+            </p>
+          </div>
+          <!--1-->
+          <div class="col-4">
+            <div class="row timeline">
+              <div class="col-4"><p class="round-number">1</p></div>
+              <div class="col-8"><hr /></div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <span
+                  >First, find your course We’ll hold your place and guide you
+                  through enrollment</span
+                >
+              </div>
+            </div>
+          </div>
+          <!--2-->
+          <div class="col-4">
+            <div class="row timeline">
+              <div class="col-4"><p class="round-number">2</p></div>
+              <div class="col-8"><hr /></div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <span>This is where the paragraph text will go</span>
+              </div>
+            </div>
+          </div>
+          <!--3-->
+          <div class="col-4">
+            <div class="row timeline">
+              <div class="col-4"><p class="round-number">3</p></div>
+              <div class="col-8">
+                <div class="row step-3">
+                  <div class="col-8"><hr /></div>
+                  <div class="col-4">
+                    <i class="fas fa-plane-departure"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <span>This is where the paragraph text will go</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 center-btn">
+            <button
+              type="button"
+              class="btn btn-outline-primary btn-outline__enquire"
+            >
+              Get started
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+      <footer>
+  <div class="container-fluid">
+    <div class="row row__footer">
+    <div class="col-4">
+    <h3>About</h3>
+    <p>Experience vibrant South Africa while you learn English. With world-class English courses, welcoming host families and a variety of experiences to choose from.</p></div>
+    <div class="col-4">
+    <h3>Links</h3>
+    <p><a href="index.html">Home</a></p>
+    <p><a href="index.html">Courses</a></p>
+    <p><a href="index.html">Accommodation</a></p>
+    <p><a href="index.html">Experience</a></p>
+    <p><a href="index.html">Enquire</a></p>
+    </div>
+    <div class="col-4">
+    <h3>Connect</h3>
+              <ul class="list-inline social-links">
+            <li class="list-inline-item">
+              <a target="_blank" href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <span class="sr-only">Facebook</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <span class="sr-only">Twitter</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="#">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                <span class="sr-only">LinkedIn</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="#">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <span class="sr-only">Instagram</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="#">
+                <i class="fa fa-youtube" aria-hidden="true"></i>
+                <span class="sr-only">YouTube</span>
+              </a>
+            </li>
+          </ul>
+    </div>
+    </div>
+</div>
+ </footer>
   </body>
-  <footer>Footer content</footer>
+
 </html>
