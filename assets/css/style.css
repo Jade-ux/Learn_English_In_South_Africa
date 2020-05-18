@@ -23,6 +23,10 @@
   float: none;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 /*-------------------------------------------------Colours*/
 
 .bg-color-title {
@@ -51,7 +55,11 @@
 
 /*-------------------------------------------------Headings*/
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: "Ubuntu";
     margin-top: 20px;
 }
@@ -73,22 +81,32 @@ h2 {
 
 /*-------------------------------------------------Navigation bar*/
 
-#logo {
-    margin-bottom: 30px;
+#header__logo-img {
+    width: 55px;
+    height: 55px;
+    display: inline-block;
+    padding-right: 0px;
+    margin-right: 0px;
 }
 
-#logo h1 {
-    line-height: 20px;
-    letter-spacing: 1px;
-    color: #fff;
-    display: inline;
+.header__logo {
+    padding-left: 50px;
+    margin-top: 35px;
+    margin-bottom: 20px;
 }
 
-#logo-img {
-    width: 50px;
-    height: 50px;
-    display: inline;
-    margin: 30px 10px 30px 30px;
+#header__logo1 h1 {
+    letter-spacing: 2px;
+    font-size: 130%;
+    margin-top: 34px;
+    padding-left: 5px;
+}
+
+#header__logo2 h1 {
+    letter-spacing: 5.9px;
+    font-size: 130%;
+    margin-top: 0px;
+    padding-left: 5px;
 }
 
 #menu {
@@ -162,6 +180,10 @@ h2 {
     -moz-transition: all .30s ease-in-out;
     -webkit-transition: all .30s ease-in-out;
     -o-transition: all .30s ease-in-out;
+}
+
+.nav__courses-active {
+        background-color: #53a333;
 }
 
 .nav__accommodation:hover {
@@ -240,16 +262,19 @@ h2 {
 
 /*-------------------------------------------------Banner image*/
 
+/*Delete if using img element instead of background
 #hero-image {
         height: 460px;
         width: 100%;
         background: url('/assets/img/bokaap.jpg') no-repeat center center; 
         border-bottom: #a1ef82 10px solid;
 }
+*/
 
-#hero-container {
-        height: 460px;
+.hero-container {
         width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
 }
 
 /*This is a container with background image
@@ -395,6 +420,8 @@ p {
 .row__steps {
     background-color: #ffe0f0;
     border-top:#fe7fbf 10px solid;
+    padding-left:10px;
+    padding-right: 10px;
 }
 
 .row__steps p {
@@ -451,7 +478,74 @@ p.round-number {
     padding: 30px 20px 20px 50px;
 }
 
+.row__footer h1 {
+    font-size: 120%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+} 
+
+.row__footer h3 {
+    font-size: 120%;
+    margin-bottom: 20px;
+} 
+
 .row__footer a {
     color: #fff;
     text-decoration: none;
+}
+
+.row__footer a:hover {
+    color: #b43c78;
+    text-decoration: none;
+}
+
+.row__footer p {
+    margin-right: 30px;
+    color: #fff;
+}
+
+#about {
+    margin-top: 20px;
+}
+
+.footer__social-links li a i {
+    width: 34px;
+    height: 34px;
+    padding-top: 14px;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    margin-right: 4px;
+    text-align: center;
+    color: #313131;
+    background: #eeeeee;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.footer__social-links li a i:hover {
+    background: #b43c78;
+    color: #eeeeee;
+}
+
+#footer__logo-img {
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    padding-right: 0px;
+    margin-right: 0px;
+}
+
+.footer__logo {
+    padding-left: 0px;
+}
+
+#footer__logo1 {
+    letter-spacing: 1px;
+}
+
+#footer__logo2 {
+    letter-spacing: 4.3px;
 }
