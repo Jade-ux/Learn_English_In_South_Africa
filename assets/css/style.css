@@ -49,9 +49,6 @@ a:hover {
   border-bottom: 10px #a1ef82 solid;
 }	
 
-.row__why-sa {
-    background-color: #595858;
-}
 
 /*-------------------------------------------------Headings*/
 
@@ -213,8 +210,8 @@ h2 {
 /*-------------------------------------------------Buttons*/
 
 .btn-outline__enquire {
-    color: #fe7fbf;
-    border-color: #fe7fbf;
+    color: #495057;
+    border-color: #495057;
     border-width: 2px;
 }
 
@@ -225,8 +222,8 @@ h2 {
 }
 
 .btn-outline__experience {
-    color: #f9e038;
-    border-color: #f9e038;
+    color: #495057;
+    border-color: #495057;
     border-width: 2px;
 }
 
@@ -237,8 +234,8 @@ h2 {
 }
 
 .btn-outline__courses {
-    color: #a1ef82;
-    border-color: #a1ef82;
+    color: #495057;
+    border-color: #495057;
     border-width: 2px;
 }
 
@@ -275,6 +272,10 @@ h2 {
         width: 100%;
         padding-left: 0px;
         padding-right: 0px;
+}
+
+.hero-container img {
+    border-bottom: #a1ef82 10px solid;
 }
 
 /*This is a container with background image
@@ -314,6 +315,10 @@ p {
 
 /*-------------------------------------------------Why SA section*/
 
+.row__why-sa {
+    background-color: #f8f9fa;
+}
+
 .why-sa {
     margin-top: 30px;
 }
@@ -323,20 +328,20 @@ p {
 }
 
 .row__why-sa h2 {
-    color: #fafafa;
+    color: #495057;
 }
 
 .row__why-sa h3 {
     text-align: center;
     font-size: 150%;
-    color: #fafafa;
+    color: #495057;
     margin-bottom: 20px;
 }
 
 .row__why-sa p {
     text-align: center;
     font-size: 100%;
-    color: #fafafa;  
+    color: #495057;  
 }
 
 .row__why-sa i {
@@ -368,8 +373,12 @@ p {
 
 /*-------------------------------------------------Testimonials section*/
 
+.row__testimonials {
+    background-color: #555c62;
+}
+
 .row__testimonials h2 {
-    color: #495057;
+    color: #f8f9fa;
 }
 
 .testimonial-col {
@@ -388,6 +397,7 @@ p {
 .quote-body {
     margin-left: 15px;
     display: inline-block;
+    color: #f8f9fa;
 }
 
 /* On screens that are 600px or less, the tesimonial text will display below the image*/
@@ -470,6 +480,112 @@ p.round-number {
     text-align: center;
 }
 
+/*-------------------------------------------------Courses page*/
+
+.accordion {
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+#accordionExample {
+    width: 100%;
+}
+
+.card-header {
+    max-height: 60px;
+    border-radius: 2px;
+    padding: 0px;
+}
+
+.card-header h2 {
+    padding-top:0px;
+    margin-top: 0px;
+
+}
+
+.card-header .btn:focus {
+    box-shadow: none;
+    color: #fafafa;
+    background-color: #53a333;
+    border-color: #53a333;
+    padding: 15px;
+    min-height: 59px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.card-header .btn:hover {
+    box-shadow: none;
+    color: #fafafa;
+    background-color: #53a333;
+    border-color: #53a333;
+    padding: 15px;
+    min-height: 59px;
+    border-radius: 2px;
+    text-decoration: none;
+    transition-duration: 0s;
+}
+
+
+/*
+.card-header .btn.focus {
+    box-shadow: none;
+    color: #fafafa;
+    background-color: #53a333;
+    border-color: #53a333;
+}*/
+
+.card-header .btn-link {
+    color: #495057;
+}
+
+.btn-block {
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 15px;
+    width: 100%;
+}
+
+.accordion__icon {
+    text-align: right;
+    color: #fafafa;
+}
+
+.card-body {
+    background-color: #dcdcdc;
+    border-top: #a1ef82 10px solid;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0px 0px 2px 2px;
+}
+
+/*This next can be deleted if not using buttons*/
+.accordion__btn {
+    width: 100%;
+    background-color: #dcdcdc;
+    color: #495057;
+    text-align: left;
+    border: #626262 2px solid;
+    border-radius: 2px;
+    margin-bottom: -15px;
+}
+
+.accordion__btn:focus {
+    color: #fafafa;
+    background-color: #a1ef82;
+    border-color: #a1ef82;
+    box-shadow: 0 0 0 0.2rem rgba(161,239,130,.44),
+}
+
+.accordion__btn:hover {
+    color: #fafafa;
+    background-color: #53a333;
+    border-color: #53a333;
+    box-shadow: 0 0 0 0.2rem rgba(161,239,130,.44),
+}
+/*can be deleted up to here*/
+
 /*-------------------------------------------------Footer*/
 
 .row__footer {
@@ -549,3 +665,4 @@ p.round-number {
 #footer__logo2 {
     letter-spacing: 4.3px;
 }
+
