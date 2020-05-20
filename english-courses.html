@@ -119,122 +119,358 @@
           </div>
           <!--Accordions-->
           <div class="accordion" id="accordionExample">
-  <div class="card">
-    <div class="card-header" id="headingOne">
-      <h2 class="mb-0">
-        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Collapsible Group Item #1
-        </button>
-      </h2>
-    </div>
+            <!--Accordion 1-->
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link btn-block text-left"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="false"
+                    aria-controls="collapseOne"
+                  >
+                    <div class="row">
+                      <div class="col-10 col-md-11">
+                        <h3>Beginner courses</h3>
+                      </div>
+                      <div class="col-1">
+                        <h3>
+                          <i class="fas fa-plus"></i
+                          ><i class="fas fa-minus"></i>
+                        </h3>
+                      </div>
+                    </div>
+                  </button>
+                </h2>
+              </div>
 
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h2 class="mb-0">
-        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Collapsible Group Item #2
-        </button>
-      </h2>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingThree">
-      <h2 class="mb-0">
-        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Collapsible Group Item #3
-        </button>
-      </h2>
-    </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-</div>
-
-          <!--My first attempt-->
-          <div class="col-12 accordions-col">
-            <p>
-              <button
-                class="btn btn-primary accordion__btn"
-                type="button"
-                data-toggle="collapse"
-                data-target="#collapseExample"
-                aria-expanded="false"
-                aria-controls="collapseExample"
+              <div
+                id="collapseOne"
+                class="collapse"
+                aria-labelledby="headingOne"
+                data-parent="#accordionExample"
               >
-                <div class="row"> <div class="col-10">Beginner English courses</div> <div class="col-2 accordion__icon"><i class="fas fa-plus"></i></div> </div>  
-              </button>
-            </p>
-            <div class="collapse" id="collapseExample">
-              <div class="card card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life
-                accusamus terry richardson ad squid. Nihil anim keffiyeh
-                helvetica, craft beer labore wes anderson cred nesciunt sapiente
-                ea proident.
+                <div class="card-body">
+                  <div class="accordion__courses">
+                    <div class="row">
+                      <div class="col-12">
+                        <h4>Beginner English Level 1</h4>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-md-4">
+                        <h5>School name</h5>
+                        <p>Whitmore English School</p>
+                        <h5>Length of course</h5>
+                        <p>4 weeks, 3 days a week</p>
+                      </div>
+                      <div class="col-12 col-md-4">
+                        <h5>Course details</h5>
+                        <p>
+                          This course will take you from speaking no English to
+                          being able to hold a conversation with an English
+                          speaker.
+                        </p>
+                      </div>
+                      <div class="col-12 col-md-4 accordion__left-col">
+                        <h5>
+                          <i class="fas fa-star"></i><i class="fas fa-star"></i
+                          ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                          ><i class="fas fa-star-half-alt"></i>
+                        </h5>
+                        <h5>Price: $395</h5>
+                        <div>
+                          <button
+                            type="button"
+                            data-toggle="modal"
+                            data-target="#signUpModal"
+                            class="btn btn-outline-primary btn-fill__courses"
+                          >
+                            Book this course
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion__courses">
+                    <div class="row">
+                      <div class="col-12">
+                        <h4>Beginner English Level 1</h4>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-md-4">
+                        <h5>School name</h5>
+                        <p>Whitmore English School</p>
+                        <h5>Length of course</h5>
+                        <p>4 weeks, 3 days a week</p>
+                      </div>
+                      <div class="col-12 col-md-4">
+                        <h5>Course details</h5>
+                        <p>
+                          This course will take you from speaking no English to
+                          being able to hold a conversation with an English
+                          speaker.
+                        </p>
+                      </div>
+                      <div class="col-12 col-md-4 accordion__left-col">
+                        <h5>
+                          <i class="fas fa-star"></i><i class="fas fa-star"></i
+                          ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                          ><i class="fas fa-star-half-alt"></i>
+                        </h5>
+                        <h5>Price: $395</h5>
+                        <div>
+                          <button
+                            type="button"
+                            class="btn btn-outline-primary btn-fill__courses"
+                          >
+                            Book this course
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--Testimonials section-->
-    <section>
-      <div class="container-fluid">
-        <div class="row row__testimonials">
-          <div class="col-12"><h2>What other students say</h2></div>
-          <!--Testimonial 1-->
-          <div class="col-sm-6 col-12 testimonial-col">
-            <div class="d-sm-block col-sm-12 col-md-6">
-              <img
-                src="assets/img/girl_quote.png"
-                class="testimonial-img"
-                height="200"
-                width="200"
-              />
+            <!--Accordion 2-->
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link btn-block text-left collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    <div class="row">
+                      <div class="col-10 col-md-11">
+                        <h3>Intermediate courses</h3>
+                      </div>
+                      <div class="col-1">
+                        <h3>
+                          <i class="fas fa-plus"></i
+                          ><i class="fas fa-minus"></i>
+                        </h3>
+                      </div>
+                    </div>
+                  </button>
+                </h2>
+              </div>
+              <div
+                id="collapseTwo"
+                class="collapse"
+                aria-labelledby="headingTwo"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body">
+                  <div class="accordion__courses">
+                    <div class="row">
+                      <div class="col-12">
+                        <h4>Beginner English Level 1</h4>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-md-4">
+                        <h5>School name</h5>
+                        <p>Whitmore English School</p>
+                        <h5>Length of course</h5>
+                        <p>4 weeks, 3 days a week</p>
+                      </div>
+                      <div class="col-12 col-md-4">
+                        <h5>Course details</h5>
+                        <p>
+                          This course will take you from speaking no English to
+                          being able to hold a conversation with an English
+                          speaker.
+                        </p>
+                      </div>
+                      <div class="col-12 col-md-4 accordion__left-col">
+                        <h5>
+                          <i class="fas fa-star"></i><i class="fas fa-star"></i
+                          ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                          ><i class="fas fa-star-half-alt"></i>
+                        </h5>
+                        <h5>Price: $395</h5>
+                        <div>
+                          <button
+                            type="button"
+                            data-toggle="modal"
+                            data-target="#signUpModal"
+                            class="btn btn-outline-primary btn-fill__courses"
+                          >
+                            Book this course
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion__courses">
+                    <div class="row">
+                      <div class="col-12">
+                        <h4>Beginner English Level 1</h4>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-md-4">
+                        <h5>School name</h5>
+                        <p>Whitmore English School</p>
+                        <h5>Length of course</h5>
+                        <p>4 weeks, 3 days a week</p>
+                      </div>
+                      <div class="col-12 col-md-4">
+                        <h5>Course details</h5>
+                        <p>
+                          This course will take you from speaking no English to
+                          being able to hold a conversation with an English
+                          speaker.
+                        </p>
+                      </div>
+                      <div class="col-12 col-md-4 accordion__left-col">
+                        <h5>
+                          <i class="fas fa-star"></i><i class="fas fa-star"></i
+                          ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                          ><i class="fas fa-star-half-alt"></i>
+                        </h5>
+                        <h5>Price: $395</h5>
+                        <div>
+                          <button
+                            type="button"
+                            data-toggle="modal"
+                            data-target="#signUpModal"
+                            class="btn btn-outline-primary btn-fill__courses"
+                          >
+                            Book this course
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="quote-body col-sm-12 col-md-6">
-              <blockquote class="blockquote">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation.
-                </p>
-                <p>- Susan Huzenlaub</p>
-              </blockquote>
-            </div>
-          </div>
-          <!--Testimonial 2-->
-          <div class="col-sm-6 col-12 testimonial-col">
-            <div class="d-sm-block">
-              <img
-                src="assets/img/boy_quote.png"
-                class="testimonial-img"
-                height="200"
-                width="200"
-              />
-            </div>
-            <div class="quote-body">
-              <blockquote class="blockquote">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation.
-                </p>
-                <p>- Susan Huzenlaub</p>
-              </blockquote>
+            <!--Accordion 3-->
+            <div class="card">
+              <div class="card-header" id="headingthree">
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link btn-block text-left collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    <div class="row">
+                      <div class="col-10 col-md-11">
+                        <h3>Advanced courses</h3>
+                      </div>
+                      <div class="col-2 col-md-1">
+                        <h3>
+                          <i class="fas fa-plus"></i
+                          ><i class="fas fa-minus"></i>
+                        </h3>
+                      </div>
+                    </div>
+                  </button>
+                </h2>
+              </div>
+              <div
+                id="collapseThree"
+                class="collapse"
+                aria-labelledby="headingThree"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body">
+                  <div class="accordion__courses">
+                    <div class="row">
+                      <div class="col-12">
+                        <h4>Beginner English Level 1</h4>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-md-4">
+                        <h5>School name</h5>
+                        <p>Whitmore English School</p>
+                        <h5>Length of course</h5>
+                        <p>4 weeks, 3 days a week</p>
+                      </div>
+                      <div class="col-12 col-md-4">
+                        <h5>Course details</h5>
+                        <p>
+                          This course will take you from speaking no English to
+                          being able to hold a conversation with an English
+                          speaker.
+                        </p>
+                      </div>
+                      <div class="col-12 col-md-4 accordion__left-col">
+                        <h5>
+                          <i class="fas fa-star"></i><i class="fas fa-star"></i
+                          ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                          ><i class="fas fa-star-half-alt"></i>
+                        </h5>
+                        <h5>Price: $395</h5>
+                        <div>
+<button
+                            type="button"
+                            data-toggle="modal"
+                            data-target="#signUpModal"
+                            class="btn btn-outline-primary btn-fill__courses"
+                          >
+                            Book this course
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion__courses">
+                    <div class="row">
+                      <div class="col-12">
+                        <h4>Beginner English Level 1</h4>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-md-4">
+                        <h5>School name</h5>
+                        <p>Whitmore English School</p>
+                        <h5>Length of course</h5>
+                        <p>4 weeks, 3 days a week</p>
+                      </div>
+                      <div class="col-12 col-md-4">
+                        <h5>Course details</h5>
+                        <p>
+                          This course will take you from speaking no English to
+                          being able to hold a conversation with an English
+                          speaker.
+                        </p>
+                      </div>
+                      <div class="col-12 col-md-4 accordion__left-col">
+                        <h5>
+                          <i class="fas fa-star"></i><i class="fas fa-star"></i
+                          ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                          ><i class="fas fa-star-half-alt"></i>
+                        </h5>
+                        <h5>Price: $395</h5>
+                        <div>
+<button
+                            type="button"
+                            data-toggle="modal"
+                            data-target="#signUpModal"
+                            class="btn btn-outline-primary btn-fill__courses"
+                          >
+                            Book this course
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -389,9 +625,103 @@
         </div>
       </div>
     </footer>
- <!-- jQuery, Popper.js and Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!--Modal-->
+    <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Book this course</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row">
+                <div class="form-group col-6">
+                  <label for="exampleInputFName">First name</label>
+                  <input type="text" class="form-control" id="exampleFName" />
+                </div>
+                <div class="form-group col-6">
+                  <label for="exampleInputLName">Last name</label>
+                  <input type="text" class="form-control" id="exampleLName" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email1">Email address</label>
+                <input type="email" class="form-control" id="email1" />
+                <small id="emailHelp" class="form-text text-muted"
+                  >We'll never share your email with anyone else.</small
+                >
+              </div>
+              <div class="form-group">
+                <label for="email2">Repeat email address</label>
+                <input type="email" class="form-control" id="email2" />
+              </div>
+              <div class="row">
+                <div class="form-group col-6">
+                  <label for="country">Country of residence</label>
+                  <input type="text" class="form-control" id="country" />
+                </div>
+                <div class="form-group col-6">
+                  <label for="language">First language</label>
+                  <input type="text" class="form-control" id="language" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect1"
+                  >Which course would you like to book?</label
+                >
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Beginner English Level 1</option>
+                  <option>Beginner English Level 2</option>
+                  <option>Intermediate English</option>
+                  <option>Advanced English</option>
+                  <option>Business English</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="date">When would you like to start?</label>
+                <input type="date" class="form-control" id="date" />
+              </div>
+              <div class="form-group">
+                <label for="textarea1"
+                  >Is there anything else you would like to let us know?</label
+                >
+                <textarea
+                  class="form-control"
+                  id="textarea1"
+                  rows="3"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-fill__courses">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery, Popper.js and Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
