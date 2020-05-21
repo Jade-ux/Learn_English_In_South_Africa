@@ -116,7 +116,7 @@ h5 {
 }
 
 #header__logo2 h1 {
-    letter-spacing: 5.9px;
+    letter-spacing: 6.3px;
     font-size: 130%;
     margin-top: 0px;
     padding-left: 5px;
@@ -200,6 +200,14 @@ h5 {
 }
 
 .nav__accommodation:hover {
+    background-color: #1c8da5;
+    transition: all .30s ease-in-out;
+    -moz-transition: all .30s ease-in-out;
+    -webkit-transition: all .30s ease-in-out;
+    -o-transition: all .30s ease-in-out;
+}
+
+.nav__accommodation-active {
     background-color: #1c8da5;
     transition: all .30s ease-in-out;
     -moz-transition: all .30s ease-in-out;
@@ -353,10 +361,6 @@ p {
 
 .row__why-sa {
     padding: 20px 30px 20px 30px;
-}
-
-.row__why-sa h2 {
-    color: #495057;
 }
 
 .row__why-sa h3 {
@@ -625,6 +629,22 @@ button[aria-expanded=false] .fas.fa-minus {
     font-size: 100%;
 }
 
+/*-------------------------------------------------Accommodation page*/
+
+.row__accomm {
+    padding: 20px 30px 20px 30px;
+}
+
+.row__accomm img {
+    border-radius: .22rem;
+    border-bottom: #38e6fe 10px solid;
+}
+
+.hero-container-accomm img {
+    border-bottom: #38e6fe 10px solid;
+}
+
+
 /*-------------------------------------------------Footer*/
 
 .row__footer {
@@ -702,6 +722,6 @@ button[aria-expanded=false] .fas.fa-minus {
 }
 
 #footer__logo2 {
-    letter-spacing: 4.3px;
+    letter-spacing: 4.7px;
 }
 
