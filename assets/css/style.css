@@ -1,12 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600|Ubuntu:300,500,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600|Ubuntu:300,500,700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 .inline-block {
@@ -24,110 +24,109 @@
 }
 
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /*-------------------------------------------------Colours*/
 
 .bg-color-title {
-    background-color: #313131;
+  background-color: #313131;
 }
 
 .border-bottom--pink {
   border-bottom: 10px #fe7fbf solid;
-}	
-    
+}
+
 .border-bottom--blue {
   border-bottom: 10px #38e6fe solid;
-}	
+}
 
 .border-bottom--yellow {
   border-bottom: 10px #f9e038 solid;
-}	
+}
 
 .border-bottom--green {
   border-bottom: 10px #a1ef82 solid;
-}	
-
+}
 
 /*-------------------------------------------------Headings*/
 
 h1,
 h2,
-h3, {
-    font-family: "Ubuntu";
-    margin-top: 20px;
+h3 {
+  font-family: "Ubuntu";
+  margin-top: 20px;
 }
 
 h1 {
-    font-size: 110%;
-    font-weight: 500;
-    color: #ffffff;
-    text-transform: uppercase;
+  font-size: 110%;
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 h2 {
-    font-size: 200%;
-    margin: 20px 0px 20px 0px;
-    text-align: center;
-    font-weight: 500;
-    color: #495057;
+  font-size: 200%;
+  margin: 20px 0px 20px 0px;
+  text-align: center;
+  font-weight: 500;
+  color: #495057;
 }
 
 h3 {
-    font-size: 140%;
-    text-align: left;
+  font-size: 140%;
+  text-align: left;
 }
 
 h4 {
-    font-size: 120%;
-    font-weight: bold;
-    margin-bottom: 25px;
-    margin-top: 30px;
+  font-size: 120%;
+  font-weight: bold;
+  margin-bottom: 25px;
+  margin-top: 30px;
 }
 
 h5 {
-    font-size: 100%;
-    font-weight: bold;
-    margin-bottom: 15px;
+  font-size: 100%;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
 /*-------------------------------------------------Navigation bar*/
 
 #header__logo-img {
-    width: 55px;
-    height: 55px;
-    display: inline-block;
-    padding-right: 0px;
-    margin-right: 0px;
+  width: 55px;
+  height: 55px;
+  display: inline-block;
+  padding-right: 0px;
+  margin-right: 0px;
 }
 
 .header__logo {
-    padding-left: 50px;
-    margin-top: 35px;
-    margin-bottom: 20px;
+  padding-left: 50px;
+  margin-top: 35px;
+  margin-bottom: 20px;
 }
 
 #header__logo1 h1 {
-    letter-spacing: 2px;
-    font-size: 130%;
-    margin-top: 34px;
-    padding-left: 5px;
+  letter-spacing: 2px;
+  font-size: 130%;
+  margin-top: 34px;
+  padding-left: 5px;
 }
 
 #header__logo2 h1 {
-    letter-spacing: 6.3px;
-    font-size: 130%;
-    margin-top: 0px;
-    padding-left: 5px;
+  letter-spacing: 6.3px;
+  font-size: 130%;
+  margin-top: 0px;
+  padding-left: 5px;
 }
 
 #menu {
-    float: right;
+  float: right;
 }
 
 .menu-container {
-    width: 100%;
+  width: 100%;
 }
 
 #nav li {
@@ -151,7 +150,7 @@ h5 {
   position: absolute;
   top: 0%;
   bottom: 1%;
-  width: 100%
+  width: 100%;
 }
 
 .nav-item a {
@@ -165,7 +164,7 @@ h5 {
   padding: 22px;
   display: block;
   color: #fafafa;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .nav-item span {
@@ -188,109 +187,113 @@ h5 {
 }
 
 .nav__courses:hover {
-    background-color: #53a333;
-    transition: all .30s ease-in-out;
-    -moz-transition: all .30s ease-in-out;
-    -webkit-transition: all .30s ease-in-out;
-    -o-transition: all .30s ease-in-out;
+  background-color: #53a333;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
 }
 
 .nav__courses-active {
-        background-color: #53a333;
+  background-color: #53a333;
 }
 
 .nav__accommodation:hover {
-    background-color: #1c8da5;
-    transition: all .30s ease-in-out;
-    -moz-transition: all .30s ease-in-out;
-    -webkit-transition: all .30s ease-in-out;
-    -o-transition: all .30s ease-in-out;
+  background-color: #1c8da5;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
 }
 
 .nav__accommodation-active {
-    background-color: #1c8da5;
-    transition: all .30s ease-in-out;
-    -moz-transition: all .30s ease-in-out;
-    -webkit-transition: all .30s ease-in-out;
-    -o-transition: all .30s ease-in-out;
+  background-color: #1c8da5;
 }
 
 .nav__experience:hover {
-    background-color: #D4AF37;
-    transition: all .30s ease-in-out;
-    -moz-transition: all .30s ease-in-out;
-    -webkit-transition: all .30s ease-in-out;
-    -o-transition: all .30s ease-in-out;
+  background-color: #d4af37;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.nav__experience-active {
+  background-color: #d4af37;
 }
 
 .nav__enquire:hover {
-    background-color: #b43c78;
-    transition: all .30s ease-in-out;
-    -moz-transition: all .30s ease-in-out;
-    -webkit-transition: all .30s ease-in-out;
-    -o-transition: all .30s ease-in-out;
+  background-color: #b43c78;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.nav__enquire-active {
+  background-color: #b43c78;
 }
 
 /*-------------------------------------------------Buttons*/
 
 .btn-outline__enquire {
-    color: #495057;
-    border-color: #495057;
-    border-width: 2px;
+  color: #495057;
+  border-color: #495057;
+  border-width: 2px;
 }
 
 .btn-outline__enquire:hover {
-    color: #fff;
-    background-color: #b43c78;
-    border-color: #b43c78;
+  color: #fff;
+  background-color: #b43c78;
+  border-color: #b43c78;
 }
 
 .btn-outline__experience {
-    color: #495057;
-    border-color: #495057;
-    border-width: 2px;
+  color: #495057;
+  border-color: #495057;
+  border-width: 2px;
 }
 
 .btn-outline__experience:hover {
-    color: #fff;
-    background-color: #D4AF37;
-    border-color: #D4AF37;
+  color: #fff;
+  background-color: #d4af37;
+  border-color: #d4af37;
 }
 
 .btn-outline__courses {
-    color: #495057;
-    border-color: #495057;
-    border-width: 2px;
+  color: #495057;
+  border-color: #495057;
+  border-width: 2px;
 }
 
 .btn-outline__courses:hover {
-    color: #fff;
-    background-color: #53a333;
-    border-color: #53a333;
+  color: #fff;
+  background-color: #53a333;
+  border-color: #53a333;
 }
 
 .btn-fill__courses {
-    color: #fff;
-    background-color: #53a333;
-    border-color: #53a333;
+  color: #fff;
+  background-color: #53a333;
+  border-color: #53a333;
 }
 
 .btn-fill__courses:hover {
-    color: #fff;
-    background-color: #a1ef82;
-    border-color: #a1ef82;
+  color: #fff;
+  background-color: #a1ef82;
+  border-color: #a1ef82;
 }
 
 .btn {
-    margin-bottom: 15px;
-    margin-top: 15px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
-.btn:hover{
-    transition: all .30s ease-in-out;
-    -moz-transition: all .30s ease-in-out;
-    -webkit-transition: all .30s ease-in-out;
-    -o-transition: all .30s ease-in-out;
+.btn:hover {
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
 }
 
 /*-------------------------------------------------Banner image*/
@@ -305,13 +308,13 @@ h5 {
 */
 
 .hero-container {
-        width: 100%;
-        padding-left: 0px;
-        padding-right: 0px;
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .hero-container img {
-    border-bottom: #a1ef82 10px solid;
+  border-bottom: #a1ef82 10px solid;
 }
 
 /*This is a container with background image
@@ -340,40 +343,40 @@ h5 {
 /*-------------------------------------------------General*/
 
 body {
-    font-family: "Montserrat";
-    color: #000;
-    font-weight: 400;
+  font-family: "Montserrat";
+  color: #000;
+  font-weight: 400;
 }
 
 p {
-    font-size: 90%;
+  font-size: 90%;
 }
 
 /*-------------------------------------------------Why SA section*/
 
 .row__why-sa {
-    background-color: #f8f9fa;
+  background-color: #f8f9fa;
 }
 
 .why-sa {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .row__why-sa {
-    padding: 20px 30px 20px 30px;
+  padding: 20px 30px 20px 30px;
 }
 
 .row__why-sa h3 {
-    text-align: center;
-    font-size: 150%;
-    color: #495057;
-    margin-bottom: 20px;
+  text-align: center;
+  font-size: 150%;
+  color: #495057;
+  margin-bottom: 20px;
 }
 
 .row__why-sa p {
-    text-align: center;
-    font-size: 100%;
-    color: #495057;  
+  text-align: center;
+  font-size: 100%;
+  color: #495057;
 }
 
 .row__why-sa i {
@@ -384,378 +387,434 @@ p {
 }
 
 .row__why-sa .fa-user-graduate {
-    color: #a1ef82;
+  color: #a1ef82;
 }
 
 .row__why-sa .fa-paw {
-    color: #f9e038;
+  color: #f9e038;
 }
 
 .row__why-sa .fa-comments {
-    color: #fe7fbf;
+  color: #fe7fbf;
 }
 
 .row__why-sa div {
-    text-align: center;
+  text-align: center;
 }
 
 .row__why-sa img {
-    border-radius: .22rem;
+  border-radius: 0.22rem;
 }
 
 /*-------------------------------------------------Testimonials section*/
 
 .row__testimonials {
-    background-color: #555c62;
+  background-color: #555c62;
 }
 
 .row__testimonials h2 {
-    color: #f8f9fa;
+  color: #f8f9fa;
 }
 
 .testimonial-col {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    display: flex;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: flex;
 }
 
 .testimonial-img {
-    border-radius: 50%;
-    border: 5px #38e6fe solid;
-    margin: 0px 15px 20px 15px;
-    display: inline-block;
+  border-radius: 50%;
+  border: 5px #38e6fe solid;
+  margin: 0px 15px 20px 15px;
+  display: inline-block;
 }
 
 .quote-body {
-    margin-left: 15px;
-    display: inline-block;
-    color: #f8f9fa;
+  margin-left: 15px;
+  display: inline-block;
+  color: #f8f9fa;
 }
 
 /* On screens that are 600px or less, the tesimonial text will display below the image*/
 @media screen and (max-width: 768px) {
+  .testimonial-col {
+    display: block;
+    text-align: center;
+  }
 
-    .testimonial-col {
-        display: block;
-        text-align: center;
-    }
+  .testimonial-img {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    .testimonial-img {
-         margin-left: auto;
-         margin-right: auto;
-    }
+  .testimonial-col p {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 
-    .testimonial-col p {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
-    .quote-body {
-        margin-left: 0px;
-        display: block;
-    }
-
+  .quote-body {
+    margin-left: 0px;
+    display: block;
+  }
 }
 
 /*-------------------------------------------------3 Easy Steps section*/
 
 .row__steps {
-    background-color: #ffe0f0;
-    border-top:#fe7fbf 10px solid;
-    padding-left:10px;
-    padding-right: 10px;
+  background-color: #ffe0f0;
+  border-top: #fe7fbf 10px solid;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+/*Desktop*/
+
+.steps-item {
+    border-top: #fe7fbf 2px solid;
+    margin-top: 40px;
+    position: relative;
+}
+
+.steps-item:before {
+  content: attr(data-step);
+  position: absolute;
+  top: -0.7em;
+  left: 0em;
+  display: block;
+  font-weight: 500;
+  font-size: 1.8em;
+  padding: 13px;
+  line-height: 13px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin: 0;
+  background-color: #fe7fbf;
+  color: white;
+}
+
+/*Mobile*/
+
+@media screen and (max-width: 767px) {
+
+    .steps-item {
+        border-left: #fe7fbf 2px solid;
+        border-top: none;
+        margin-top: 0px;
+    }
+
+    .steps-item:before {
+        content: attr(data-step);
+        left: -0.7em;
+        top: 1em;
+        margin: 0;
+    }
+
+    .steps-item h4 {
+        margin-left: 30px;
+    }
+
+    .row__steps span {
+        margin-left: 30px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
 }
 
 .row__steps p {
-    text-align: center;
-    font-size: 1.1em;
+  text-align: center;
+  font-size: 1.1em;
 }
 
-.timeline {
-    margin-top: 30px;
-}
-
-p.round-number {
-    text-align: center;
-    font-size: 1.6em;
-    font-weight: 700;
-    color: #fff;
-    background-color: #fe7fbf;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    line-height: 18px;
-    padding: 15px;
-    margin: auto;
+.row__steps i {
+  font-size: 28px;
+  color: #fe7fbf;
 }
 
 .row__steps hr {
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
-    border-top: 3px solid #fe7fbf;
+    border-top: 3px dashed #fe7fbf;
 }
 
-.step-3 i {
-    font-size: 28px;
-    color: #fe7fbf;
+.steps-airplane {
+    margin-left: -6px;
+}
+
+.steps-welcome {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.row__steps h4 {
+    margin-left: 45px;
+}
+
+.row__steps h5 {
+    font-size: 120%;
+    color: #b43c78;
 }
 
 .row__steps span {
-    padding-left: 20px;
-    font-size: 1em;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    display: block;
+  margin-left: 45px;
+  font-size: 1em;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: block;
 }
 
 .center-btn {
-    text-align: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /*-------------------------------------------------Courses page*/
 
 .accordion {
-    padding-left: 45px;
-    padding-right: 45px;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 
 #accordionExample {
-    width: 100%;
-    margin-bottom: 40px;
+  width: 100%;
+  margin-bottom: 40px;
 }
 
 .card-header {
-    max-height: 60px;
-    border-radius: 2px;
-    padding: 0px;
-    border-bottom: 2px solid #b8b8b9;
-    background-color: #555c62;
+  max-height: 60px;
+  border-radius: 2px;
+  padding-bottom: 4.3rem;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  border-bottom: 2px solid #b8b8b9;
+  background-color: #555c62;
 }
 
 .card-header h2 {
-    padding-top:0px;
-    margin-top: 0px;
+  padding-top: 0px;
+  margin-top: 0px;
 }
 
 .card-header h3 {
-    color: #fafafa;
-}
-
-
-.card-header .btn:focus {
-    box-shadow: none;
-    color: #fafafa;
-    background-color: #53a333;
-    border-color: #53a333;
-    padding-bottom: 15px;
-    min-height: 59px;
-    border-radius: 2px;
-    text-decoration: none;
-}
-
-.card-header .btn:hover {
-    box-shadow: none;
-    color: #fafafa;
-    background-color: #53a333;
-    border-color: #53a333;
-    padding-bottom: 15px;
-    margin-bottom: 0px;
-    max-height: 60px;
-    border-radius: 2px;
-    text-decoration: none;
-    transition-duration: 0s;
-}
-
-.card-header span {
-    display: inline-block;
-    text-align: right;
-}
-
-button[aria-expanded=true] .fas.fa-plus {
-    display: none;
-}
-
-button[aria-expanded=false] .fas.fa-minus {
-    display: none;
-}
-
-.course-title {
-    text-align: center;
-}
-
-.accordion__left-col {
-    text-align: right;
-}
-
-@media screen and (max-width: 768px) {
-    .accordion__left-col {
-        text-align: left;
-    }
-
-    .card-header h3 {
-        font-size: 100%;
-    }
-}
-
-.accordion__courses {
-    border-bottom: #a3a4a5 2px solid;
-}
-
-.card-header .btn-link {
-    color: #495057;
-}
-
-.btn-block {
-    margin-top: 0px;
-    padding-bottom: 0px;
-    padding-top: 15px;
-    width: 100%;
+  color: #fafafa;
 }
 
 .accordion__icon {
-    text-align: right;
-    color: #fafafa;
+  text-align: right;
+  color: #fafafa;
 }
 
-.card-body {
-    background-color: #eaeaea;
-    border-top: #a1ef82 10px solid;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-    border-radius: 0px 0px 2px 2px;
+#accordionExample .btn-block {
     padding-top: 0px;
 }
 
-.card-body p {
+.card-header .btn:focus {
+  box-shadow: none;
+  color: #fafafa;
+  background-color: #53a333;
+  border-color: #53a333;
+  min-height: 59px;
+  border-radius: 2px;
+  text-decoration: none;
+  padding-bottom: 4.3rem;
+}
+
+.card-header .btn:hover {
+  box-shadow: none;
+  color: #fafafa;
+  background-color: #53a333;
+  border-color: #53a333;
+  padding-bottom: 15px;
+  margin-bottom: 0px;
+  max-height: 60px;
+  border-radius: 2px;
+  text-decoration: none;
+  transition-duration: 0s;
+  padding-bottom: 4.3rem;
+}
+
+.card-header span {
+  display: inline-block;
+  text-align: right;
+}
+
+button[aria-expanded="true"] .fas.fa-plus {
+  display: none;
+}
+
+button[aria-expanded="false"] .fas.fa-minus {
+  display: none;
+}
+
+.course-title {
+  text-align: center;
+}
+
+.accordion__left-col {
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  .accordion__left-col {
+    text-align: left;
+  }
+
+  .card-header h3 {
     font-size: 100%;
+  }
+}
+
+.accordion__courses {
+  border-bottom: #a3a4a5 2px solid;
+}
+
+.card-header .btn-link {
+  color: #495057;
+}
+
+.btn-block {
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-top: 15px;
+  width: 100%;
+}
+
+.card-body {
+  background-color: #eaeaea;
+  border-top: #a1ef82 10px solid;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0px 0px 2px 2px;
+  padding-top: 0px;
+}
+
+.card-body p {
+  font-size: 100%;
 }
 
 /*-------------------------------------------------Accommodation page*/
 
 .row__accomm {
-    padding: 20px 30px 20px 30px;
+  padding: 20px 30px 20px 30px;
 }
 
 .row__accomm img {
-    border-radius: .22rem;
-    border-bottom: #38e6fe 10px solid;
+  border-radius: 0.22rem;
+  border-bottom: #38e6fe 10px solid;
 }
 
 .hero-container-accomm img {
-    border-bottom: #38e6fe 10px solid;
+  border-bottom: #38e6fe 10px solid;
 }
 
 .carousel-item img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .carousel {
-    padding: 30px 30px 75px 30px;
+  padding: 30px 30px 75px 30px;
 }
 
 .image-gallery.col-sm-6.col-md-3 {
-    padding: 0px;
+  padding: 0px;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #1c1c1c;
+  background-color: #1c1c1c;
 }
 
 /* On screens that are 768px or less, the carousel for large screens will not display*/
-@media screen and (max-width: 768px) {
-    .carousel-large-screens {
-        display: none;
-    }
-
+@media screen and (max-width: 767px) {
+  .carousel-large-screens {
+    display: none;
+  }
 }
 
 /* On screens that are larger than 768px, the carousel for small screens will not display*/
 @media screen and (min-width: 768px) {
-    .carousel-small-screens {
-        display: none;
-    }
-
+  .carousel-small-screens {
+    display: none;
+  }
 }
 
 /*-------------------------------------------------Footer*/
 
 .row__footer {
-    background-color: #313131;
-    color: #fff;
-    padding: 30px 20px 20px 50px;
+  background-color: #313131;
+  color: #fff;
+  padding: 30px 20px 20px 50px;
 }
 
 .row__footer h1 {
-    font-size: 120%;
-    margin-bottom: 0px;
-    margin-top: 0px;
-} 
+  font-size: 120%;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
 
 .row__footer h3 {
-    font-size: 120%;
-    margin-bottom: 20px;
-} 
+  font-size: 120%;
+  margin-bottom: 20px;
+}
 
 .row__footer a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 .row__footer a:hover {
-    color: #b43c78;
-    text-decoration: none;
+  color: #b43c78;
+  text-decoration: none;
 }
 
 .row__footer p {
-    margin-right: 30px;
-    color: #fff;
+  margin-right: 30px;
+  color: #fff;
 }
 
 #about {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .footer__social-links li a i {
-    width: 34px;
-    height: 34px;
-    padding-top: 14px;
-    border-radius: 50%;
-    font-size: 13px;
-    line-height: 7px;
-    margin-right: 4px;
-    text-align: center;
-    color: #313131;
-    background: #eeeeee;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
+  width: 34px;
+  height: 34px;
+  padding-top: 14px;
+  border-radius: 50%;
+  font-size: 13px;
+  line-height: 7px;
+  margin-right: 4px;
+  text-align: center;
+  color: #313131;
+  background: #eeeeee;
+  transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
 }
 
 .footer__social-links li a i:hover {
-    background: #b43c78;
-    color: #eeeeee;
+  background: #b43c78;
+  color: #eeeeee;
 }
 
 #footer__logo-img {
-    width: 45px;
-    height: 45px;
-    display: inline-block;
-    padding-right: 0px;
-    margin-right: 0px;
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  padding-right: 0px;
+  margin-right: 0px;
 }
 
 .footer__logo {
-    padding-left: 0px;
+  padding-left: 0px;
 }
 
 #footer__logo1 {
-    letter-spacing: 1px;
+  letter-spacing: 1px;
 }
 
 #footer__logo2 {
-    letter-spacing: 4.7px;
+  letter-spacing: 4.7px;
 }
-
