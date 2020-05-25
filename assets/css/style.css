@@ -298,43 +298,11 @@ h5 {
 
 /*-------------------------------------------------Banner image*/
 
-/*Delete if using img element instead of background
-#hero-image {
-        height: 460px;
-        width: 100%;
-        background: url('/assets/img/bokaap.jpg') no-repeat center center; 
-        border-bottom: #a1ef82 10px solid;
-}
-*/
-
 .hero-container {
   width: 100%;
   padding-left: 0px;
   padding-right: 0px;
 }
-
-/*This is a container with background image
-
-
-#overlay-text, #overlay-text h2 { 
-        color: #ffffff;
-}
-
-#overlay-text {
-        float: left;
-        font-size: 130%;
-        font-family: "Ubuntu";
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        width: 300px;
-        height: 150px;
-        padding-top: 40px;
-        padding-left: 10px;
-        background-color: rgba(161, 239, 130, .8);
-        bottom: 30px;
-        left: 20px;
-        position: absolute;
-}*/
 
 /*-------------------------------------------------General*/
 
@@ -350,9 +318,10 @@ p {
 
 /*-------------------------------------------------Why SA section*/
 
+/*
 .row__why-sa {
   background-color: #f8f9fa;
-}
+}*/
 
 .why-sa {
   margin-top: 30px;
@@ -401,6 +370,11 @@ p {
 .row__why-sa img {
   border-radius: 0.22rem;
 }
+
+.feature-imgs img {
+    border-radius: 0.22rem;
+}
+
 
 /*-------------------------------------------------Testimonials section*/
 
@@ -695,14 +669,16 @@ button[aria-expanded="false"] .fas.fa-minus {
   padding: 20px 30px 20px 30px;
 }
 
+/*
 .row__accomm img {
   border-radius: 0.22rem;
   border-bottom: #38e6fe 10px solid;
-}
+}*/
 
+/*
 .hero-container-accomm img {
   border-bottom: #38e6fe 10px solid;
-}
+}*/
 
 .carousel-item img {
   max-width: 100%;
@@ -734,6 +710,13 @@ button[aria-expanded="false"] .fas.fa-minus {
     display: none;
   }
 }
+
+/*-------------------------------------------------Experience page*/
+
+.row__experience {
+  padding: 20px 45px 45px 45px;
+}
+
 
 /*-------------------------------------------------Enquire page*/
 
