@@ -313,10 +313,6 @@ h5 {
   padding-right: 0px;
 }
 
-.hero-container img {
-  border-bottom: #a1ef82 10px solid;
-}
-
 /*This is a container with background image
 
 
@@ -436,7 +432,7 @@ p {
 }
 
 /* On screens that are 600px or less, the tesimonial text will display below the image*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .testimonial-col {
     display: block;
     text-align: center;
@@ -654,7 +650,7 @@ button[aria-expanded="false"] .fas.fa-minus {
   text-align: right;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .accordion__left-col {
     text-align: left;
   }
@@ -737,6 +733,53 @@ button[aria-expanded="false"] .fas.fa-minus {
   .carousel-small-screens {
     display: none;
   }
+}
+
+/*-------------------------------------------------Enquire page*/
+
+.row__enquire {
+  padding: 20px 45px 45px 45px;
+}
+
+.nav-tabs .nav-link {
+    color: #353638;
+    background-color: #eff0f2;
+    font-size: 110%;
+    padding-top: 11px;
+    min-width: 150px;
+    height: 50px;
+    border-radius: 3px 3px 0px 0px;
+}
+
+.nav-tabs .nav-link:hover {
+    color: white;
+    background-color: #b43c78;
+}
+
+.nav-tabs .nav-link.active {
+    color: white;
+    background-color: #b43c78;
+    border: none;
+    border-radius: 3px 3px 0px 0px;
+}
+
+.tab-pane {
+    background-color: #eaeaea;
+    padding: 20px 30px 20px 30px;
+    border-top: #b43c78 solid 10px;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+@media screen and (max-width: 767px) {
+    .nav-tabs .nav-link {
+        min-width: 50%;
+    }
+
+    .row__enquire {
+        padding: 20px 5px 30px 5px;
+    }
 }
 
 /*-------------------------------------------------Footer*/
