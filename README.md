@@ -8,7 +8,42 @@ The agency's USP is allowing prospective students to book their entire study-tou
  
 ## UX
 
-Wireframes: 
+#Wireframes
+
+[See my wireframes here](assets/mockups-and-wireframes/Milestone-Project-1-wireframes.pdf)
+
+#mockups
+
+I found the combination of colours for my website by creating mockups in Photoshop and trying out different colours. I settled on colours taken from the houses shown in the banner image on the home page because those colours are vibrant and fun and I believe they would appeal to young, adventurous people who are the target market for the agency's services and this website.
+[Home page mockup](assets/mockups-and-wireframes/Styles-mockup--home-pg.jpg)
+
+## URL naming
+
+Named URLs for SEO therefore the 'courses' page URL is 'english-courses'
+--------
+
+##attribution
+
+Image sources (all labled for reuse)
+
+https://commons.wikimedia.org/
+Unsplash
+Pixabay
+https://www.pope.af.mil/News/Features/Display/Article/243323/taking-volunteering-to-a-whole-new-level/
+https://pxhere.com/
+
+**Solution to accordion icon image**
+
+**Accommodation page** 
+
+To make the icon on the accordions change from a plus to a minus when expanding the accordions, I found a solution on this page: https://stackoverflow.com/questions/19024218/bootstrap-3-collapse-change-chevron-icon-on-click/ 
+
+Carousel: I realise having different carousels for different screen sizes is not ideal as the code is repetitive.
+However, I looked for a solution that would allow the carousel only scroll by one each with each scroll, and adjust to smaller screens to only show one image at a time. But all the solutions I found online required 
+javascript and in testing them, they did not work as I wanted my carousel to work. Therefore I have created two carousels, one that will display for mobile devices and one 
+that will display for desktops. One of the solutions I considered is here: https://stackoverflow.com/questions/20007610/bootstrap-carousel-multiple-frames-at-once
+
+---- instructions
  
 Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
@@ -94,18 +129,3 @@ Welcome Jade-ux,
 
 This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
 
-## URL naming
-
-Named URLs for SEO therefore the 'courses' page URL is 'english-courses'
---------
-
-##attribution
-
-**Accommodation page** 
-
-To make the icon on the accordions change from a plus to a minus when expanding the accordions, I found a solution on this page: https://stackoverflow.com/questions/19024218/bootstrap-3-collapse-change-chevron-icon-on-click/ 
-
-Carousel: I realise having different carousels for different screen sizes is not ideal as the code is repetitive.
-However, I looked for a solution that would allow the carousel only scroll by one each with each scroll, and adjust to smaller screens to only show one image at a time. But all the solutions I found online required 
-javascript and in testing them, they did not work as I wanted my carousel to work. Therefore I have created two carousels, one that will display for mobile devices and one 
-that will display for desktops. One of the solutions I considered is here: https://stackoverflow.com/questions/20007610/bootstrap-carousel-multiple-frames-at-once

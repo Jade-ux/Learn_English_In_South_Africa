@@ -397,6 +397,7 @@ p {
   margin-top: 30px;
   margin-bottom: 20px;
   display: flex;
+  padding-right: 30px;
 }
 
 .testimonial-img {
