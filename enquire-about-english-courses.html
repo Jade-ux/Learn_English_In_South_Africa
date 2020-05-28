@@ -131,7 +131,7 @@
           </div>
         </div>
       </div>
-      <!--Form-->
+      <!--Form tabs-->
       <div class="container-fluid">
         <div class="row__enquire">
           <nav>
@@ -154,11 +154,12 @@
                 role="tab"
                 aria-controls="nav-profile"
                 aria-selected="false"
-                >Profile</a
+                >General enquiry</a
               >
             </div>
           </nav>
           <div class="tab-content" id="nav-tabContent">
+            <!--Get started form-->
             <div
               class="tab-pane fade show active"
               id="nav-start"
@@ -166,145 +167,148 @@
               aria-labelledby="nav-start-tab"
             >
               <h3>Get started</h3>
-              <p>Explain</p>
-              <form>
+              <p>If you already know which course you would like to book, that's great, let's get you started! Fill in your details below, and we'll hold your place on the course while we go through the next steps of securing your accommodation and booking your experiences.</p>
+              <form action="thank-you-general.html" method="get">
                 <div class="row">
                   <div class="form-group col-12 col-md-6">
-                    <label for="exampleInputFName">First name</label>
-                    <input type="text" class="form-control" id="exampleFName" />
+                    <label for="first_name">First name</label>
+                    <input type="text" class="form-control" id="first_name" name="first_name" required/>
                   </div>
                   <div class="form-group col-12 col-md-6">
-                    <label for="exampleInputLName">Last name</label>
-                    <input type="text" class="form-control" id="exampleLName" />
+                    <label for="last_name">Last name</label>
+                    <input type="text" class="form-control" id="last_name" name="last_name" required />
                   </div>
                 </div>
                 <div class="row">
-                <div class="form-group col-12 col-md-6">
+                <div class="form-group col-12 col-md-6 col-left">
                   <label for="email1">Email address</label>
-                  <input type="email" class="form-control" id="email1" />
-                  <small id="emailHelp" class="form-text text-muted"
+                  <input type="email" class="form-control" id="email1" name="email" required/>
+                  <small id="emailHelp" class="form-text"
                     >We'll never share your email with anyone else.</small
                   >
                 </div>
                 <div class="form-group col-12 col-md-6">
                   <label for="email2">Repeat email address</label>
-                  <input type="email" class="form-control" id="email2" />
+                  <input type="email" class="form-control" id="email2" name="email2" required/>
                 </div>
                 </div>
                 <div class="row">
                   <div class="form-group col-12 col-md-6">
-                    <label for="country">Country of residence</label>
-                    <input type="text" class="form-control" id="country" />
+                    <label for="country">Country of residence</label> 
+                    <input type="text" class="form-control" id="country" name="country" required/>
                   </div>
                   <div class="form-group col-12 col-md-6">
                     <label for="language">First language</label>
-                    <input type="text" class="form-control" id="language" />
+                    <input type="text" class="form-control" id="language" name="language" required />
                   </div>
                 </div>
                 <div class="row">
                 <div class="form-group col-12 col-md-6">
-                  <label for="exampleFormControlSelect1"
+                  <label for="course"
                     >Which course are you interested in?</label
                   >
-                  <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Beginner English Level 1</option>
-                    <option>Beginner English Level 2</option>
-                    <option>Intermediate English</option>
-                    <option>Advanced English</option>
-                    <option>Business English</option>
+                  <select class="form-control" id="course" name="course" required>
+                  <option>Beginner English Level 1</option>
+                  <option>Beginner English Level 2</option>
+                  <option>Intermediate English 1</option>
+                  <option>Business English 1</option>
+                  <option>Writing for academic purposes</option>
                   </select>
                 </div>
                 <div class="form-group col-12 col-md-6">
-                  <label for="date">When would you like to start?</label>
-                  <input type="date" class="form-control" id="date" />
+                  <label for="start_date">When would you like to start?</label>
+                  <input type="date" class="form-control" id="start_date"  name="start_date" required/>
                 </div>
                 </div>
                 <div class="row">
                 <div class="form-group col-12 col-md-6">
-                  <label for="accommodation-type"
+                  <label for="accommodation_type"
                     >What is your preferred accommodation type?</label
                   >
-                  <select class="form-control" id="accommodation-type">
+                  <select class="form-control" id="accommodation_type" name="accommodation_type" required>
                     <option>Home stay, full board</option>
                     <option>Home stay, half board</option>
                     <option>Self-catering, non-shared</option>
-                  </select>
+                  </select> 
                 </div>
-                <div class="form-group col-12 col-md-6" id="experience-types">
-                <label for="experience-types"
-                    >Let us know which experiences you are interested in</label
-                  >
-<div class="row">
-                  <div class="form-check col-6">
+                <div class="form-group col-12 col-md-6" id="expeience_types" name="expeience_types">
+                <label for="expeience_types"
+                    >Let us know which experiences you are interested in (optional)</label>
+                    <div class="row ml-2">
+                  <div class="form-check col-12 col-md-6">
                     <input
                       class="form-check-input"
                       type="radio"
                       name="wildlife"
                       id="wildlife"
-                      value="option1"
+                      value="wildlife"
                       checked
                     />
                     <label class="form-check-label" for="wildlife">
                       Wildlife
                     </label>
                   </div>
+                <div class="form-check col-12 col-md-6">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="sport_leisure"
+                      id="sport_leisure"
+                      value="sport_leisure"
+                    />
+                    <label class="form-check-label" for="sport_leisure">
+                      Sport and leisure
+                    </label>
+                  </div>
+                  </div>
+                  <div class="row ml-2">
+                  <div class="form-check col-12 col-md-6">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="history_culture"
+                      id="history_culture"
+                      value="history_culture"
+                    />
+                    <label class="form-check-label" for="history_culture">
+                      History and culture
+                    </label>
+                  </div>
                 <div class="form-check col-6">
                     <input
                       class="form-check-input"
                       type="radio"
-                      name="nature"
-                      id="nature"
-                      value="option1"
+                      name="volunteering"
+                      id="volunteering"
+                      value="volunteering"
                     />
-                    <label class="form-check-label" for="nature">
-                      Nature
-                    </label>
-                  </div>
-                    <div class="form-check col-6">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="adventure-sports"
-                      id="adventure-sports"
-                      value="option1"
-                    />
-                    <label class="form-check-label" for="adventure-sports">
-                      Adventure sports
-                    </label>
-                  </div>
-                <div class="form-check col-6">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="nightlife"
-                      id="nightlife"
-                      value="option1"
-                    />
-                    <label class="form-check-label" for="nightlife">
-                      Nightlife
+                    <label class="form-check-label" for="volunteering">
+                      Volunteering
                     </label>
                   </div>
                   </div>
                   </div>
-                </div>
+                  </div>
                 <div class="row">
                 <div class="form-group col-12">
                   <label for="textarea1"
                     >Is there anything else you would like to let us
-                    know?</label
+                    know or ask us?</label
                   >
                   <textarea
                     class="form-control"
                     id="textarea1"
                     rows="3"
+                    name="comments"
                   ></textarea>
                 </div>
                 </div>
                 <button type="submit" class="btn btn-fill_enquire">
-                  Submit
+                  Send
                 </button>
               </form>
             </div>
+            <!--General enquiry form-->
             <div
               class="tab-pane fade"
               id="nav-general"
@@ -312,40 +316,49 @@
               aria-labelledby="nav-general-tab"
             >
               <h3>General enquiry</h3>
-              <p>Explain</p>
-              <form>
-                <div class="form-group">
-                  <label for="exampleInputEmail2">Email address</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleInputEmail2"
-                    aria-describedby="emailHelp"
-                  />
-                  <small id="emailHelp2" class="form-text text-muted"
+              <p>Here you can ask us anything about the courses, accommodation, the experiences or the process.</p>
+<form action="thank-you-general.html" method="get">
+                <div class="row">
+                  <div class="form-group col-12 col-md-6">
+                    <label for="gen-first_name">First name</label>
+                    <input type="text" class="form-control" id="gen-first_name" name="gen-first_name" required/>
+                  </div>
+                  <div class="form-group col-12 col-md-6">
+                    <label for="gen-last_name">Last name</label>
+                    <input type="text" class="form-control" id="gen-last_name" name="gen-last_name" required />
+                  </div>
+                </div>
+                <div class="row">
+                <div class="form-group col-12 col-md-6 col-left">
+                  <label for="gen-email1">Email address</label>
+                  <input type="email" class="form-control" id="gen-email1" name="gen-email" required/>
+                  <small id="gen-emailHelp" class="form-text"
                     >We'll never share your email with anyone else.</small
                   >
                 </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword2">Password</label>
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="exampleInputPassword2"
-                  />
+                <div class="form-group col-12 col-md-6">
+                  <label for="gen-email2">Repeat email address</label>
+                  <input type="email" class="form-control" id="gen-email2" name="gen-email2" required/>
                 </div>
-                <div class="form-group form-check">
-                  <input
-                    type="checkbox"
-                    class="form-check-input"
-                    id="exampleCheck2"
-                  />
-                  <label class="form-check-label" for="exampleCheck2"
-                    >Check me out</label
+                </div>
+                <div class="row">
+                <div class="form-group col-12">
+                  <label for="gen-textarea1"
+                    >Add your question here</label
                   >
+                  <textarea
+                    class="form-control"
+                    id="gen-textarea1"
+                    rows="6"
+                    name="gen-comments"
+                    required
+                  ></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary btn-fill_enquire">Submit</button>
-              </form>
+                </div>
+                <button type="submit" class="btn btn-fill_enquire">
+                  Send
+                </button>
+                </form>
             </div>
           </div>
         </div>

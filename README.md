@@ -24,6 +24,9 @@ Named URLs for SEO therefore the 'courses' page URL is 'english-courses'
 
 ##attribution
 
+**Fixing left and right scroll on mobile**
+I found on mobile my website was scrollable left and right which was unintentional. [I found the solution here ](https://www.weblimitless.com/stop-website-showing-white-space-right-side/) and therefore have added that to the top of my stylesheet.
+
 Image sources (all labled for reuse)
 
 https://commons.wikimedia.org/
@@ -32,7 +35,19 @@ Pixabay
 https://www.pope.af.mil/News/Features/Display/Article/243323/taking-volunteering-to-a-whole-new-level/
 https://pxhere.com/
 
+##Courses page
+
+**Form**
+
+I have added a new page for the form action, to display the 'Thank you for booking...' text but in future development I would like to add that message to the page the user is on and connect it up to a database.
+
+To get certain text to show on the page after a user has submitted the form I used the following resource:
+
+[Stack Overflow answer](https://stackoverflow.com/questions/15447889/display-html-form-values-in-same-page-after-submit-using-ajax)
+
 **Solution to accordion icon image**
+
+
 
 **Accommodation page** 
 
@@ -42,6 +57,8 @@ Carousel: I realise having different carousels for different screen sizes is not
 However, I looked for a solution that would allow the carousel only scroll by one each with each scroll, and adjust to smaller screens to only show one image at a time. But all the solutions I found online required 
 javascript and in testing them, they did not work as I wanted my carousel to work. Therefore I have created two carousels, one that will display for mobile devices and one 
 that will display for desktops. One of the solutions I considered is here: https://stackoverflow.com/questions/20007610/bootstrap-carousel-multiple-frames-at-once
+
+
 
 ---- instructions
  

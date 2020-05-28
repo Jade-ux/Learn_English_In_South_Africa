@@ -3,6 +3,15 @@
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600|Ubuntu:300,500,700&display=swap");
 
+/*-------------------------------------------------General*/
+
+/*Stops website scrolling left and right on mobile, solution found here: https://www.weblimitless.com/stop-website-showing-white-space-right-side/*/
+html,
+body {
+    overflow-x: hidden; 
+    width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +22,7 @@
   display: inline-block;
 }
 
+/*I don't think these are used anywhere
 .row-table {
   display: table;
 }
@@ -23,8 +33,25 @@
   float: none;
 }
 
+*/
+
+.row__padding {
+  padding: 20px 30px 20px 30px;
+}
+
 a:hover {
   text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+  font-weight: 400;
+}
+
+p,
+span {
+  font-size: 90%;
 }
 
 /*-------------------------------------------------Colours*/
@@ -54,8 +81,9 @@ a:hover {
 h1,
 h2,
 h3 {
-  font-family: "Ubuntu";
+  font-family: "Ubuntu", sans-serif;
   margin-top: 20px;
+  color: #495057;
 }
 
 h1 {
@@ -70,12 +98,11 @@ h2 {
   margin: 20px 0px 20px 0px;
   text-align: center;
   font-weight: 500;
-  color: #495057;
 }
 
 h3 {
   font-size: 140%;
-  text-align: left;
+  margin-bottom: 25px;
 }
 
 h4 {
@@ -236,6 +263,10 @@ h5 {
 
 /*-------------------------------------------------Buttons*/
 
+.btn:focus {
+    box-shadow: none;
+}
+
 .btn-outline__enquire {
   color: #495057;
   border-color: #495057;
@@ -291,6 +322,26 @@ h5 {
   border-color: #a1ef82;
 }
 
+.btn-outline__accommodation {
+  color: #495057;
+  border-color: #495057;
+  border-width: 2px;
+}
+
+.btn-fill__accommodation,
+.btn-outline__accommodation:hover {
+  color: #fff;
+  background-color: #1c8da5;
+  border-color: #1c8da5;
+}
+
+.btn-fill__accommodation:hover {
+  color: #fff;
+  background-color: #38e6fe;
+  border-color: #38e6fe;
+}
+
+
 .btn {
   margin-bottom: 15px;
   margin-top: 15px;
@@ -311,31 +362,10 @@ h5 {
   padding-right: 0px;
 }
 
-/*-------------------------------------------------General*/
-
-body {
-  font-family: "Montserrat";
-  color: #000;
-  font-weight: 400;
-}
-
-p {
-  font-size: 90%;
-}
-
 /*-------------------------------------------------Why SA section*/
-
-/*
-.row__why-sa {
-  background-color: #f8f9fa;
-}*/
 
 .why-sa {
   margin-top: 30px;
-}
-
-.row__why-sa {
-  padding: 20px 30px 20px 30px;
 }
 
 .row__why-sa h3 {
@@ -413,8 +443,8 @@ p {
   color: #f8f9fa;
 }
 
-/* On screens that are 600px or less, the tesimonial text will display below the image*/
-@media screen and (max-width: 767px) {
+/* On screens that are 767.98px or less, the tesimonial text will display below the image*/
+@media screen and (max-width: 767.98px) {
   .testimonial-col {
     display: block;
     text-align: center;
@@ -473,7 +503,7 @@ p {
 
 /*Mobile*/
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
 
     .steps-item {
         border-left: #fe7fbf 2px solid;
@@ -575,6 +605,7 @@ p {
 
 .card-header h3 {
   color: #fafafa;
+  padding-left: 20px;
 }
 
 .accordion__icon {
@@ -632,7 +663,7 @@ button[aria-expanded="false"] .fas.fa-minus {
   text-align: right;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .accordion__left-col {
     text-align: left;
   }
@@ -705,8 +736,8 @@ button[aria-expanded="false"] .fas.fa-minus {
   background-color: #1c1c1c;
 }
 
-/* On screens that are 768px or less, the carousel for large screens will not display*/
-@media screen and (max-width: 767px) {
+/* On screens that are 767.98px or less, the carousel for large screens will not display*/
+@media screen and (max-width: 767.98px) {
   .carousel-large-screens {
     display: none;
   }
@@ -736,7 +767,7 @@ button[aria-expanded="false"] .fas.fa-minus {
     background-color: #eff0f2;
     font-size: 110%;
     padding-top: 11px;
-    min-width: 150px;
+    min-width: 170px;
     height: 50px;
     border-radius: 3px 3px 0px 0px;
 }
@@ -762,7 +793,7 @@ button[aria-expanded="false"] .fas.fa-minus {
     border-bottom: none;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
     .nav-tabs .nav-link {
         min-width: 50%;
     }
@@ -770,6 +801,29 @@ button[aria-expanded="false"] .fas.fa-minus {
     .row__enquire {
         padding: 20px 5px 30px 5px;
     }
+}
+
+/*-------------------------------------------------Thank you page*/
+
+.row__thank-you {
+  text-align: center;
+}
+
+.row__thank-you h4 {
+    font-weight: 100;
+    line-height: 160%;
+}
+
+/*-------------------------------------------------Forms*/
+
+.form-control:focus {
+    border-color: #fe7fbf;
+    box-shadow: 0 0 0 0.2rem #fe7fbf54;
+}
+
+.form--courses .form-control:focus {
+    border-color: #a1ef82;
+    box-shadow: 0 0 0 0.2rem #a1ef8263;
 }
 
 /*-------------------------------------------------Footer*/
@@ -789,6 +843,8 @@ button[aria-expanded="false"] .fas.fa-minus {
 .row__footer h3 {
   font-size: 120%;
   margin-bottom: 20px;
+  text-align: left;
+  color: #fff;
 }
 
 .row__footer a {
@@ -820,7 +876,7 @@ button[aria-expanded="false"] .fas.fa-minus {
   margin-right: 4px;
   text-align: center;
   color: #313131;
-  background: #eeeeee;
+  background: #fff;
   transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
   -webkit-transition: all 0.35s ease-in-out;
@@ -829,7 +885,7 @@ button[aria-expanded="false"] .fas.fa-minus {
 
 .footer__social-links li a i:hover {
   background: #b43c78;
-  color: #eeeeee;
+  color: #fff;
 }
 
 #footer__logo-img {
