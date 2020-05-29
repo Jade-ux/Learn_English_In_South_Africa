@@ -363,7 +363,7 @@ h5 {
 
 /*-------------------------------------------------Why SA section*/
 
-.why-sa {
+.row__why-sa-images {
   margin-top: 30px;
 }
 
@@ -474,6 +474,20 @@ h5 {
   padding-right: 45px;
 }
 
+.link--courses,
+.link--accommodation {
+    color: #000;
+    font-weight: bold;
+}
+
+.link--courses:hover {
+    color: #418028;
+}
+
+.link--accommodation:hover {
+    color: #1A8199;
+}
+
 /*Desktop*/
 
 .steps-item {
@@ -547,8 +561,8 @@ h5 {
 }
 
 .steps-welcome {
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .row__steps h4 {
@@ -605,6 +619,7 @@ h5 {
 .card-header h3 {
   color: #fafafa;
   padding-left: 20px;
+  text-align: left;
 }
 
 .accordion__icon {
@@ -661,18 +676,12 @@ button[aria-expanded="false"] .fas.fa-minus {
   text-align: right;
 }
 
-@media screen and (max-width: 767.98px) {
-  .accordion__left-col {
-    text-align: left;
-  }
-
-  .card-header h3 {
-    font-size: 100%;
-  }
-}
-
 .accordion__courses {
   border-bottom: #a3a4a5 2px solid;
+}
+
+.accordion__courses-last {
+  border-bottom: none;
 }
 
 .card-header .btn-link {
@@ -693,11 +702,27 @@ button[aria-expanded="false"] .fas.fa-minus {
   border-left: none;
   border-right: none;
   border-radius: 0px 0px 2px 2px;
-  padding-top: 0px;
+  padding: 0px 30px;
 }
 
 .card-body p {
   font-size: 100%;
+}
+
+@media screen and (max-width: 767.98px) {
+  .accordion__left-col {
+    text-align: left;
+  }
+
+  .card-header h3 {
+    font-size: 100%;
+  }
+
+#accordionExample {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
 }
 
 /*-------------------------------------------------Accommodation page*/
@@ -706,16 +731,9 @@ button[aria-expanded="false"] .fas.fa-minus {
   padding: 20px 30px 20px 30px;
 }
 
-/*
-.row__accomm img {
-  border-radius: 0.22rem;
-  border-bottom: #38e6fe 10px solid;
-}*/
-
-/*
-.hero-container-accomm img {
-  border-bottom: #38e6fe 10px solid;
-}*/
+.row__accomm p, h3 {
+    text-align: center;
+}
 
 .carousel-item img {
   max-width: 100%;
@@ -754,10 +772,28 @@ button[aria-expanded="false"] .fas.fa-minus {
   padding: 20px 45px 45px 45px;
 }
 
+.row__experience p{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.row__experience h4 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 /*-------------------------------------------------Enquire page*/
 
 .row__enquire {
-  padding: 20px 45px 45px 45px;
+  padding: 20px 45px 15px 45px;
+}
+
+.row__enquire p {
+  text-align: center;
+}
+
+.row__enquire h3 {
+  text-align: left;
 }
 
 .nav-tabs .nav-link {

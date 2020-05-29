@@ -1,12 +1,24 @@
 # Learn English in South Africa 
 
+**Purpose**
+
 The Learn English in South Africa website is owned by a study-tourism agency that provides a booking service for people who would like to complete an English-language course in South Africa.
 
-The website allows users to browse options for courses, accommodation and experiences - which are activities they can enjoy in South Africa. 
+The website allows users to browse options for courses, accommodation and experiences. The experiences are activities they can enjoy in South Africa. 
 
-The agency's USP is allowing prospective students to book their entire study-tourism experience in three easy steps - first they find the course they want to take, by browsing courses offered on the website. They then browse accommodation options and lastly, the experiences.
+The agency's USP is allowing prospective students to book their entire study-tourism experience in three easy steps - first they find the course they want to take, by browsing accredited courses offered on the website. then they decide on their preferred accommodation type. The last step is to choose their experiences. 
  
 ## UX
+
+**User stories**
+
+
+
+**Home button on navigation** The logo at the top of the website and in the footer serve as the link to get back to the home page. However, when I tried to create the entire div as a link it broke the grid structure. Therefore I have created each individual element within the logo as a link. In future developments I plan to make the entire logo block a link in both the top and footer of the website.
+
+**Colours** I have taken the colours from the colours of the houses shown in the home page banner. These are vibrant and eye-catching colours and I think they will appeal to the agency's target market who are adventurous, energetic people looking for new learning experiences.
+
+**Buttons** There are two styles of buttons on the site. The outline buttons are for people in the first phase of the buying cycle and are still only looking around at information. The solid colour buttons are for people in the next buying phase who are ready to book a course or contact the agency.
 
 #Wireframes
 
@@ -34,6 +46,8 @@ Unsplash
 Pixabay
 https://www.pope.af.mil/News/Features/Display/Article/243323/taking-volunteering-to-a-whole-new-level/
 https://pxhere.com/
+
+
 
 ##Courses page
 
@@ -91,7 +105,7 @@ In this section, you should mention all of the languages, frameworks, libraries,
 I tested the colours I have used for navigation elements using the [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/) to ensure accessibility of all colours. I realised that a few of the colours I was using for the roll-over effects were not accessible and I have therefore chosen darker colours to ensure accessibility to WCAG AA standards. This has worked well as I now have deeper and richer colours for roll-overs but brighter colours for highlights which hint at the rich variety of experiences people can expect when they visit South Africa.
 
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+//In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
 Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
 
