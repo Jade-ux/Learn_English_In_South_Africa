@@ -742,42 +742,11 @@ button[aria-expanded="false"] .fas.fa-minus {
 /*-------------------------------------------------Accommodation page*/
 
 .row__accomm {
-  padding: 20px 30px 20px 30px;
+  padding: 20px 45px 45px 45px;;
 }
 
 .row__accomm p, h3 {
     text-align: center;
-}
-
-.carousel-item img {
-  max-width: 100%;
-}
-
-.carousel {
-  padding: 30px 30px 75px 30px;
-}
-
-.image-gallery.col-sm-6.col-md-3 {
-  padding: 0px;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: #1c1c1c;
-}
-
-/* On screens that are 767.98px or less, the carousel for large screens will not display*/
-@media screen and (max-width: 767.98px) {
-  .carousel-large-screens {
-    display: none;
-  }
-}
-
-/* On screens that are larger than 768px, the carousel for small screens will not display*/
-@media screen and (min-width: 768px) {
-  .carousel-small-screens {
-    display: none;
-  }
 }
 
 /*-------------------------------------------------Experience page*/

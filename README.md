@@ -57,12 +57,9 @@ I have added a new page for the form action, to display the 'Thank you for booki
 
 **Accommodation page** 
 
-To make the icon on the accordions change from a plus to a minus when expanding the accordions, I found a solution on this page: https://stackoverflow.com/questions/19024218/bootstrap-3-collapse-change-chevron-icon-on-click/ 
+I had originally added a carousel to the Accommodation page, to show a gallary of accommodation options. However, I know that carousel's are not accesible so in the end I decided to remove it. 
 
-Carousel: I realise having different carousels for different screen sizes is not ideal as the code is repetitive.
-However, I looked for a solution that would allow the carousel only scroll by one each with each scroll, and adjust to smaller screens to only show one image at a time. But all the solutions I found online required 
-javascript and in testing them, they did not work as I wanted my carousel to work. Therefore I have created two carousels, one that will display for mobile devices and one 
-that will display for desktops. One of the solutions I considered is here: https://stackoverflow.com/questions/20007610/bootstrap-carousel-multiple-frames-at-once
+I have not added a gallery of images in a different format to make up for it because I realised without the gallery the page was much more succint and would get users moving on to the next step quicker. I don't think the gallery added much to the user experience.
 
 
 
