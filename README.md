@@ -41,14 +41,6 @@ https://pxhere.com/
 
 I have added a new page for the form action, to display the 'Thank you for booking...' text but in future development I would like to add that message to the page the user is on and connect it up to a database.
 
-To get certain text to show on the page after a user has submitted the form I used the following resource:
-
-[Stack Overflow answer](https://stackoverflow.com/questions/15447889/display-html-form-values-in-same-page-after-submit-using-ajax)
-
-**Solution to accordion icon image**
-
-
-
 **Accommodation page** 
 
 To make the icon on the accordions change from a plus to a minus when expanding the accordions, I found a solution on this page: https://stackoverflow.com/questions/19024218/bootstrap-3-collapse-change-chevron-icon-on-click/ 
@@ -93,6 +85,11 @@ In this section, you should mention all of the languages, frameworks, libraries,
 
 
 ## Testing
+
+**Colours**
+
+I tested the colours I have used for navigation elements using the [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/) to ensure accessibility of all colours. I realised that a few of the colours I was using for the roll-over effects were not accessible and I have therefore chosen darker colours to ensure accessibility to WCAG AA standards. This has worked well as I now have deeper and richer colours for roll-overs but brighter colours for highlights which hint at the rich variety of experiences people can expect when they visit South Africa.
+
 
 In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
