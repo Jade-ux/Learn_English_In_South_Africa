@@ -261,6 +261,14 @@ h5 {
   background-color: #b43c78;
 }
 
+/* Logo bottom margin for mobile*/
+@media screen and (max-width: 767.98px) {
+
+    .header__logo {
+    margin-bottom: 35px;
+    }
+}
+
 /*-------------------------------------------------Buttons*/
 
 .btn {
@@ -590,9 +598,15 @@ h5 {
 
 /*-------------------------------------------------Courses page*/
 
+.row__courses {
+    padding-top: 20px;
+    padding-bottom: 20px; 
+}
+
 .accordion {
   padding-left: 45px;
   padding-right: 45px;
+  margin-top: 20px;
 }
 
 #accordionExample {
@@ -940,4 +954,13 @@ button[aria-expanded="false"] .fas.fa-minus {
 
 #footer__logo2 {
   letter-spacing: 4.7px;
+}
+
+/* Footer columns - no padding for mobile*/
+@media screen and (max-width: 767.98px) {
+
+    .col__footer {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
