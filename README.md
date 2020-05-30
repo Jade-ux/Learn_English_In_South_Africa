@@ -16,6 +16,19 @@ Currently the site only allows users to book courses and browse the other option
 
 **User goals:** Users would be looking for a trustworthy source of information about English courses, and would want to compare a number of courses based on price, suitability, length of time and rating. Users who are willing to travel abroad to learn English will want to ensure they have suitable accommodation booked before they depart and would like to plan a few activities in South Africa to make the most of their time in the country. The selling point for this website is that users can book all of these parts of their trip at the best prices (the agency will have negotiated bulk discounts), all in one place and as easily and quickly as possible.
 
+**Competitor analysis:** Individual schools have their own websites but these do not offer a broad range of courses across different schools so users would need to visit many sites to compare courses and offers across schools.
+
+## Core requirements
+
+-	The website should allow users to translate the contents using their browser’s translator – therefore most content should be in the form of text and not text in images
+-	Iconography should be used to help users navigate the site
+-	Icons should be internationally recognized as associated with the content they are referring to
+-	Images should illustrate the experience of studying in SA 
+-	As this is a B2C site, users are likely to make decisions based largely on emotional responses. Therefore images and design should be welcoming and reassuring as well as compelling and, as much as possible, universally representative.
+-	Must be optimised for search engines
+-	Users would expect an intuitive journey and would want to find out information quickly therefore I have made the menu bold and clear.
+-	Mobile design important as many users will be navigating on their phones
+
 ## UX
 
 ### User story one
@@ -62,7 +75,7 @@ I added additional colours for roll-overs and active states which are much deepe
 
 **Buttons:** There are two styles of buttons on the site. The outline buttons are for people in the first phase of the buying cycle and are still only looking around at information. The solid colour buttons are for people in the next buying phase who are ready to book a course or contact the agency.
 
-##URL naming
+## URL naming
 
 As SEO is an important consideration for this site, I have named URLs for SEO, therefore the 'Courses' page URL is 'english-courses'
 
@@ -75,28 +88,28 @@ However, as the development of a solution that would automatically add the cours
 
 ### Accommodation page
 
-I had originally added a carousel to the Accommodation page, to show a gallary of accommodation options. However, I know that carousel's are not accesible so in the end I decided to remove it.
+I had originally added a carousel to the Accommodation page, to show a gallery of accommodation options. However, I know that carousel's are not accesible so in the end I decided to remove it.
 
 I have not added a gallery of images in a different format to make up for it because I realised without the gallery the page was much more succint and would get users moving on to the next step quicker. I don't think the gallery added much to the user experience.
 
 ## Features
-
+- 
 //In this section, you should go over the different parts of your project, and describe each in a sentence or so.
 
 ### Existing Features
 
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
-
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+- The 3 Easy Steps feature helps all users understand the process that they would go through with this agency to get everything booked. This section changes depending on the page and allows users to follow the steps.
+- The accordions feature allows users to browse through content quickly, without having to process large amounts of text all at once.
+- The booking form in a modal feature allows users who want to book a course, to book the course online.
+- The contact form on the Enquire page allows users to either contact the agency to ask a general question, or book a course.
 
 ### Features Left to Implement
 
 - **Forms success message:** I have added a new page for the form action, to display the 'Thank you for booking...' text but in future development I would like to add that message to the page the user is on when they submit the form and connect it up to a database. 
 - **Forms automatically include course name:** On the courses page, I would like to have the form title automatically include the name of the course relating to the 'Book this course' button the user clicked.
-
+- **Log in:** I would like to enable users to log in so that they can save their choices and add options to a 'Shopping basket' and then check out, paying for everything on the website.
+- **Experience filter:** A feature that allows users to filter to only the experiences they are interested in.
+- **Courses filter:** A feature allowing the user to filter courses based on certain criteria (price, city, level, length of time, ratings).
 
 ## Technologies Used
 
@@ -109,6 +122,13 @@ In addition, you may also use this section to discuss plans for additional featu
 **Colours:** I tested the colours I have used for navigation elements using the [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/) to ensure accessibility of all colours. I realised that a few of the colours I was using for the roll-over effects were not accessible and I have therefore chosen darker colours to ensure accessibility to WCAG AA standards. This has worked well as I now have deeper and richer colours for roll-overs but brighter colours for highlights which hint at the rich variety of experiences people can expect when they visit South Africa.
 
 **Forms:** I manually tested each of the forms on the website, making sure all required fields had to be completed before the form could be submitted and ensuring that the input validators are working. I also tested that when the form is submitted the user is notified that it has been submitted successfully - this notification comes in the form of a new page which says 'Thank you for ...'.
+
+**Links:** The site was tested for broken links using the [Broken Link Checker plugin from Atom SEO](https://error404.atomseo.com/SeoCheck/Report/jade-ux.github.io/2020-05-29/free?from=)
+
+**Validating CSS:** I tested my CSS code using the [Jigsaw validator](https://jigsaw.w3.org/css-validator/validator) and the result was that no errors were found.
+
+**Validating markup:** My HTML was tested using the [W3C Markup Validation Service](https://validator.w3.org/). There were a few errors highlighted and I have fixed each one except for the following:
+- Heading warning on banner images - recommended to add header to the banner section, however, I do not want text over the banner and my next heading is one section down so I have left this as it is for now.
 
 //In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
@@ -152,11 +172,11 @@ In addition, if it is not obvious, you should also describe how to run your code
 
 - **Image sources:** All photos used on this site have been labled for reuse and were taken from the following sources:
 
-*[Wikimedia Commons](https://commons.wikimedia.org/)
-*[Unsplash](https://unsplash.com/)
-*[Pixabay](https://pixabay.com/)
-*[Pope Field](https://www.pope.af.mil/News/Features/Display/Article/243323/taking-volunteering-to-a-whole-new-level/)
-*[PxHere](https://pxhere.com/)
+* [Wikimedia Commons](https://commons.wikimedia.org/)
+* [Unsplash](https://unsplash.com/)
+* [Pixabay](https://pixabay.com/)
+* [Pope Field](https://www.pope.af.mil/News/Features/Display/Article/243323/taking-volunteering-to-a-whole-new-level/)
+* [PxHere](https://pxhere.com/)
 
 ### Solutions to issues/bugs
 
@@ -165,5 +185,5 @@ I found tht on mobile my website was scrollable left and right which was uninten
 
 ### Acknowledgements
 
-- I received inspiration for this project from Susan Bandli, who is a host to students from around the world.
-- I took some inspiration for the design of my navigation car from the Resume project from Module 5 of the Full Stack Developer course.
+- I received inspiration for this project from my friend, Susan Bandli, who is a host to students from around the world. 
+- I took some inspiration for the design of my navigation from the Resume project from Module 5 of the Full Stack Developer course.

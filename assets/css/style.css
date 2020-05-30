@@ -22,19 +22,6 @@ body {
   display: inline-block;
 }
 
-/*I don't think these are used anywhere
-.row-table {
-  display: table;
-}
-
-.section-column {
-  display: table-cell;
-  padding: 0 30px 30px;
-  float: none;
-}
-
-*/
-
 .row__padding {
   padding: 20px 30px 20px 30px;
 }
@@ -52,6 +39,11 @@ body {
 p,
 span {
   font-size: 90%;
+}
+
+.feature-imgs img {
+    border-radius: 0.22rem;
+    width: 100%;
 }
 
 /*-------------------------------------------------Colours*/
@@ -369,6 +361,10 @@ h5 {
   padding-right: 0px;
 }
 
+.hero-container img {
+  width: 100%;
+}
+
 /*-------------------------------------------------Why SA section*/
 
 .row__why-sa-images {
@@ -413,12 +409,8 @@ h5 {
 
 .row__why-sa img {
   border-radius: 0.22rem;
+  width: 100%;
 }
-
-.feature-imgs img {
-    border-radius: 0.22rem;
-}
-
 
 /*-------------------------------------------------Testimonials section*/
 
@@ -442,6 +434,8 @@ h5 {
   border: 5px #38e6fe solid;
   margin: 0px 15px 20px 15px;
   display: inline-block;
+  height: 200px;
+  width: 200px;
 }
 
 .quote-body {
@@ -736,7 +730,6 @@ button[aria-expanded="false"] .fas.fa-minus {
     padding-left: 20px;
     padding-right: 20px;
   }
-
 }
 
 /*-------------------------------------------------Accommodation page*/
