@@ -6,7 +6,9 @@ The Learn English in South Africa website is a B2C commercial website owned by a
 
 The website allows users to browse options for courses, accommodation and experiences. The experiences are activities they can enjoy in South Africa.
 
-My inspiration for this website has come from conversations I have had with people who have travelled to South Africa, from all over the world, to study English. One of my friends is a host and has been providing accommodation for students for many years. The students are from 16 years old and up and come from many different backgrounds.
+My inspiration for this website has come from conversations I have had with people who have travelled to South Africa, from all over the world, to study English. However, the concept of offering the ability to book courses, accommodation and experiences in one place is my own idea.
+
+One of my friends is a host and has been providing accommodation for students for many years. The students are from 16 years old and up and come from many different backgrounds.
 
 The agency's USP is allowing prospective students to book their entire study-tourism experience in three easy steps - first they find the course they want to take, by browsing accredited courses offered on the website. Then they decide on their preferred accommodation type. The last step is to choose their experiences. 
 
@@ -64,7 +66,9 @@ I created mockups before building the site. This helped me plan how to structure
 
 [See my wireframes here](assets/mockups-and-wireframes/milestone-project-1-wireframes.pdf)
 
-I also created style mockups to test out colour combinations and styles for the site. 
+After beginning the development of the website I changed a few of the design elements and features such as the banner. In the wireframes you will see the banner is a carousel image with a small text box over it. I learnt that carousels are not accessible and therefore changed the banner to a static image. I also realised the text over the banner would not work well on mobile devices and left that off the final design.
+
+I created style mockups to test out colour combinations and styles for the site. 
 
 [Home page mockup](assets/mockups-and-wireframes/styles-mockup--home-pg.jpg)
 
@@ -93,8 +97,6 @@ I had originally added a carousel to the Accommodation page, to show a gallery o
 I have not added a gallery of images in a different format to make up for it because I realised without the gallery the page was much more succint and would get users moving on to the next step quicker. I don't think the gallery added much to the user experience.
 
 ## Features
-- 
-//In this section, you should go over the different parts of your project, and describe each in a sentence or so.
 
 ### Existing Features
 
@@ -105,7 +107,7 @@ I have not added a gallery of images in a different format to make up for it bec
 
 ### Features Left to Implement
 
-- **Forms success message:** I have added a new page for the form action, to display the 'Thank you for booking...' text but in future development I would like to add that message to the page the user is on when they submit the form and connect it up to a database. 
+- **Forms success message:** I have added a new page for the form action, to display the 'Thank you for booking' or 'Thank you for contacting us' text but in the next release I would like to add that message to the page the user is on when they submit the form and connect the form up to a database. 
 - **Forms automatically include course name:** On the courses page, I would like to have the form title automatically include the name of the course relating to the 'Book this course' button the user clicked.
 - **Log in:** I would like to enable users to log in so that they can save their choices and add options to a 'Shopping basket' and then check out, paying for everything on the website.
 - **Experience filter:** A feature that allows users to filter to only the experiences they are interested in.
@@ -113,7 +115,8 @@ I have not added a gallery of images in a different format to make up for it bec
 
 ## Technologies Used
 
-- This site was written in HTML5 and CSS3
+- This site was written in HTML5
+- I styled the HTML using CSS3. My CSS class naming convention is based on the BEM method.
 - [Bootstrap](https://getbootstrap.com/)
   - This project uses Bootstrap to speed up the development process. Some Bootstrap elements use Jquery, Popper.js and Javascript.
 
@@ -130,7 +133,12 @@ I have not added a gallery of images in a different format to make up for it bec
 **Validating markup:** My HTML was tested using the [W3C Markup Validation Service](https://validator.w3.org/). There were a few errors highlighted and I have fixed each one except for the following:
 - Heading warning on banner images - recommended to add header to the banner section, however, I do not want text over the banner and my next heading is one section down so I have left this as it is for now.
 
-//In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+There were a few interesting bugs:
+- Enquire page: on the form there was an error on the select input field - if required you need either a size attribute greater than 1. Adding a size attribute broke the design as it was no longer a drop-down. I have therefore removed the 'required' attribute and will look for a solution in future releases.
+- Also on the form there was an error on the label for the checkboxes group. Therefore I have added a legend instead of a label for the fieldset of checkboxes.
+- There is a warning on the date field as this is not supported in all browsers. However, I have chosen to leave it in and have conducted my own testing in Firefox, Chrome and Safari. In all of these the date option works as expected.
+
+**Still to complete**//In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
 //Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
 
@@ -150,15 +158,28 @@ If this section grows too long, you may want to split it off into a separate fil
 
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+This site is deployed on GitHub pages and I deployed it in the following way:
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
+1. Navigated to my repository on [GitHub here](https://github.com/Jade-ux/Learn_English_In_South_Africa)
+2. Clicked 'Settings'
+3. Scrolled down to the 'GitHub Pages' section 
+4. Under 'Source' I selected 'Master Branch' as that is the branch I want to show.
+5. My site was then published
 
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
+[View my live site here.](https://jade-ux.github.io/Learn_English_In_South_Africa/)
 
-In addition, if it is not obvious, you should also describe how to run your code locally.
+**If you would like to run my code locally you can clone the site by following these steps:**
+
+[Instructions taken from GitHub Help, you can find out more here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+
+1. Visit the main page of my repository on [GitHub here.](https://github.com/Jade-ux/Learn_English_In_South_Africa)
+2. Click 'Clone or download'
+3. Click the icon to the right of the URL. This will allow you to clone the repository using HTTPS.
+4. If you would like to clone if using SSH, click 'Use SSH'
+5. Open Terminal locally
+6. Change the directory to the folder where you would like to run the cloned directory
+7. Type 'Git clone' and then paste the URL you copied from my repository in GitHub 
+8. Press enter and your local clone of my site will be created.
 
 ## Credits
 
@@ -185,5 +206,7 @@ I found tht on mobile my website was scrollable left and right which was uninten
 
 ### Acknowledgements
 
-- I received inspiration for this project from my friend, Susan Bandli, who is a host to students from around the world. 
+- I received inspiration for this project from my friend, Susan Bandli, who is a host to students from around the world, and from conversations I have had with a few of these students.
 - I took some inspiration for the design of my navigation from the Resume project from Module 5 of the Full Stack Developer course.
+- Thank you to the Code Institute Slack community for support.
+- Thank you to my mentor, Dick Vlaanderen for support and guidance.

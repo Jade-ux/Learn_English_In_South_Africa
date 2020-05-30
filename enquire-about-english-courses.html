@@ -18,7 +18,7 @@
     ></script>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>
-      Learn English in South Africa | Find your course
+      Learn English in South Africa | Contact us
     </title>
   </head>
   <body>
@@ -29,7 +29,10 @@
           <div class="row">
             <div class="col-3 header__logo">
               <a href="index.html">
-                <img src="assets/img/sa-flag-speech.png" id="header__logo-img" alt="logo"
+                <img
+                  src="assets/img/sa-flag-speech.png"
+                  id="header__logo-img"
+                  alt="logo"
               /></a>
             </div>
             <div class="col-9">
@@ -109,7 +112,10 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 hero-container border-bottom--pink">
-            <img src="assets/img/enquire-penguin-banner.jpg" width="100%" alt="penguin hopping down a rock"/>
+            <img
+              src="assets/img/enquire-penguin-banner.jpg"
+              alt="penguin hopping down a rock"
+            />
           </div>
         </div>
       </div>
@@ -155,7 +161,7 @@
                 data-toggle="tab"
                 href="#nav-general"
                 role="tab"
-                aria-controls="nav-profile"
+                aria-controls="nav-general"
                 aria-selected="false"
                 >General enquiry</a
               >
@@ -243,20 +249,22 @@
                 <div class="row">
                   <div class="form-group col-12 col-md-6">
                     <label for="course"
-                      >Which course are you interested in?</label
+                      >Which course are you interested in? (optional)</label
                     >
-                    <select
-                      class="form-control"
-                      id="course"
-                      name="course"
-                      required
-                    >
+                    <select class="form-control" id="course" name="course">
+                      <option value="" disabled selected
+                        >Select your option</option
+                      >
                       <option>Beginner English Level 1</option>
                       <option>Beginner English Level 2</option>
                       <option>Intermediate English 1</option>
                       <option>Business English 1</option>
                       <option>Writing for academic purposes</option>
                     </select>
+                    <small id="courses-help" class="form-text"
+                      >If you're not sure which course is right for you, leave
+                      this blank.</small
+                    >
                   </div>
                   <div class="form-group col-12 col-md-6">
                     <label for="start_date"
@@ -274,13 +282,13 @@
                 <div class="row">
                   <div class="form-group col-12 col-md-6">
                     <label for="accommodation_type"
-                      >What is your preferred accommodation type?</label
+                      >What is your preferred accommodation type?
+                      (optional)</label
                     >
                     <select
                       class="form-control"
                       id="accommodation_type"
                       name="accommodation_type"
-                      required
                     >
                       <option>Home stay, full board</option>
                       <option>Home stay, half board</option>
@@ -288,15 +296,10 @@
                       <option>I'm not sure yet, send me all options.</option>
                     </select>
                   </div>
-                  <div
-                    class="form-group col-12 col-md-6"
-                    id="expeience_types"
-                    name="expeience_types"
-                  >
-                    <label for="expeience_types"
-                      >Let us know which experiences you are interested in
-                      (optional)</label
-                    >
+                  <div class="form-group col-12 col-md-6" id="experience_types">
+                  <fieldset class="form-group">
+                    <legend class="col-form-label">Let us know which experiences you are interested in
+                    (optional)</legend>
                     <div class="row ml-2">
                       <div class="form-check col-12 col-md-6">
                         <input
@@ -349,6 +352,7 @@
                         </label>
                       </div>
                     </div>
+                    </fieldset>
                   </div>
                 </div>
                 <div class="row">
