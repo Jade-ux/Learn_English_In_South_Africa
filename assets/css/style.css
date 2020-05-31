@@ -619,24 +619,21 @@ h5 {
   background-color: #555c62;
 }
 
-.card-header h2 {
+.mb-0 {
   padding-top: 0px;
   margin-top: 0px;
 }
 
-.card-header h3 {
+.card-header .btn {
   color: #fafafa;
-  padding-left: 20px;
   text-align: left;
-}
-
-.accordion__icon {
-  text-align: right;
-  color: #fafafa;
+  font-size: 100%;
 }
 
 #accordionExample .btn-block {
-    padding-top: 0px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .card-header .btn:focus {
@@ -648,6 +645,7 @@ h5 {
   border-radius: 2px;
   text-decoration: none;
   padding-bottom: 4.3rem;
+  padding-top: 15px;
 }
 
 .card-header .btn:hover {
@@ -661,11 +659,13 @@ h5 {
   text-decoration: none;
   transition-duration: 0s;
   padding-bottom: 4.3rem;
+  padding-top: 15px;
 }
 
-.card-header span {
-  display: inline-block;
-  text-align: right;
+i.fas.fa-plus,
+i.fas.fa-minus {
+    padding-top:5px;
+    float: right;
 }
 
 button[aria-expanded="true"] .fas.fa-plus {
@@ -684,6 +684,11 @@ button[aria-expanded="false"] .fas.fa-minus {
   text-align: right;
 }
 
+.accordion__left-col i {
+    font-size: 100%;
+    margin-bottom: 15px;
+}
+
 .accordion__courses {
   border-bottom: #a3a4a5 2px solid;
 }
@@ -692,11 +697,8 @@ button[aria-expanded="false"] .fas.fa-minus {
   border-bottom: none;
 }
 
-.card-header .btn-link {
-  color: #495057;
-}
-
 .btn-block {
+  color: #495057;
   margin-top: 0px;
   padding-bottom: 0px;
   padding-top: 15px;
