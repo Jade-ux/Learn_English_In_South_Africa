@@ -284,8 +284,8 @@ h5 {
 }
 
 .btn-outline__enquire {
-  color: #495057;
-  border-color: #495057;
+  color: #b43c78;
+  border-color: #b43c78;
   border-width: 2px;
 }
 
@@ -308,8 +308,8 @@ h5 {
 }
 
 .btn-outline__experience {
-  color: #495057;
-  border-color: #495057;
+  color: #B19025;
+  border-color: #B19025;
   border-width: 2px;
 }
 
@@ -320,8 +320,8 @@ h5 {
 }
 
 .btn-outline__courses {
-  color: #495057;
-  border-color: #495057;
+  color: #418028;
+  border-color: #418028;
   border-width: 2px;
 }
 
@@ -344,8 +344,8 @@ h5 {
 }
 
 .btn-outline__accommodation {
-  color: #495057;
-  border-color: #495057;
+  color: #1A8199;
+  border-color: #1A8199;
   border-width: 2px;
 }
 
@@ -661,6 +661,9 @@ h5 {
   border-radius: 2px;
   text-decoration: none;
   transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -webkit-transition-duration: 0s;
+  -o-transition-duration: 0s;
   padding-bottom: 4.3rem;
   padding-top: 15px;
 }

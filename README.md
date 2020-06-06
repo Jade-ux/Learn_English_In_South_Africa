@@ -1,5 +1,7 @@
 # Learn English in South Africa
 
+[View my live site here.](https://jade-ux.github.io/Learn_English_In_South_Africa/)
+
 ## Purpose
 
 The Learn English in South Africa website is a B2C commercial website owned by a study-tourism agency that provides a booking service for people who would like to complete an English-language course in South Africa.
@@ -35,30 +37,35 @@ Currently the site only allows users to book courses and browse the other option
 
 ### User story one
 
-The user is looking for English courses abroad but does not yet know where she wants to study. She lands on the home page, reads through the 'Why study in South Africa?' section then scrolls to the 'Get started in 3 easy steps' section which tells her how the process will work. After reading the content she is satisfied that she would like to study in South Africa. 
+As a prospective student I want to find and book the best English language course to suit my needs, in a country where I can practice speaking English to locals every day, and book my accommodation and activities all with one agency.
+
+I do not yet know where I want to study. I land on the home page of this site, read through the 'Why study in South Africa?' section which convinces me that South Africa is a good place to study. Then I scroll to the 'Get started in 3 easy steps' section. 
+
+Here I find how the process will work with this agency. 
+ 
 [See the user journey here](assets/user-stories/user-story1.jpg) 
-1. She clicks the 'Find your course' button 
-2. This takes her to the Courses page. She browses through the courses. When she finds one she likes she clicks 'Book this course'.
-3. She completes the form and hits 'send'
-4. She is taken to the 'Thank you' page and from there either chooses to leave the site or carry on browsing through to the accommodation page. 
+1. I click the 'Find your course' button to browse courses available
+2. On the Courses page I can quickly find the courses at my level and click to open the relevant accordion section. I find the course I like the sound of and click 'Book this course'.
+3. I complete the form and hit 'send'
+4. I am taken to the 'Thank you' page and from there either choose to leave the site or carry on browsing through to the accommodation page. 
 
 ### User story two
 
-User knows he wants to study in SA and wants to find the best course. He is researching many sites and wants to go straight to looking up the courses we have available.
+As a prospective student I know I want to study English in South Africa. I would like to find and compare courses before booking. 
 [See the user journey here](assets/user-stories/user-story2.jpg) 
-1. He immediately clicks the 'Courses' navigational link.
-2. On the courses page he browses through the courses. When he has found the one he wants he clicks 'Book this course'
-3. He completes the form and hits 'send'. 
-4. He is taken to the 'Thank you' page and from there he clicks the button to browse through he accommodation options.
+1. From the home page I immediately click the 'Courses' navigational link.
+2. On the courses page I browse through the courses. When I have found the one I want to book I click 'Book this course'
+3. I complete the form and hit 'send'. 
+4. I am taken to the 'Thank you' page and from there click the button to browse through the accommodation options. From there I decide which type of accommodation I would like to choose.
 
 ### User story two
 
-The user reaches the courses page via a search engine (bypassing the home page). 
+As a prospective student I want to compare English language courses and book the best one for my needs. I would also like to book accommodation. I have reached the courses page of this site via a search engine (bypassing the home page). 
 [See the user journey here](assets/user-stories/user-story3.jpg)
-1. She browses the content in the accordions, finding the course she would like to apply for and clicks 'Book this course'. 
-2. Having completed the form she is taken to the 'Thank you' page. She is interested in booking accommodation for her stay in South Africa and clicks the 'Browse accommodation' button.
-3. On the Accommodation page she looks through the types of accommodation and decides which she would prefer. Then, she scrolls down to the '3 Easy steps' section and reads about the process. She is interested in finding out more about the experiences and clicks the 'Choose your experiences' button.
-4. She reads through the experiences and decides which she would like to take part in. From there she leaves the site as she will wait to hear from the agency by email.
+1. I browse the content in the accordions, finding the course I would like to apply for and click 'Book this course'. 
+2. Having completed the form I am taken to the 'Thank you' page. I am interested in booking accommodation for my stay in South Africa and click the 'Browse accommodation' button.
+3. On the Accommodation page I look through the types of accommodation and decide which I would prefer. Then, I scroll down to the '3 Easy steps' section and read about the process. I am interested in finding out more about the experiences and click the 'Choose your experiences' button.
+4. I read through the experiences and decide which I would like to take part in. From there I leave the site as I will wait to hear from the agency by email.
 
 ## Design
 
@@ -79,7 +86,7 @@ I added additional colours for roll-overs and active states which are much deepe
 
 **Home button on navigation:** The logo at the top of the website and in the footer serve as the link to get back to the home page. However, when I tried to create the entire div as a link it broke the grid structure. Therefore I have created each individual element within the logo as a link. In future developments I plan to make the entire logo block a link in both the top and footer of the website.
 
-**Buttons:** There are two styles of buttons on the site. The outline buttons are for people in the first phase of the buying cycle and are still only looking around at information. The solid colour buttons are for people in the next buying phase who are ready to book a course or contact the agency.
+**Buttons:** There are two styles of buttons on the site. The outline buttons are for people in the first phase of the buying cycle and are still only looking around at information. The solid colour buttons are for people in the next buying phase who are ready to book a course or contact the agency. The colours of the buttons or the colour of the hover effects are linked to the content for instance, all buttons to the courses page will be green or green on hover.
 
 ## URL naming
 
@@ -91,6 +98,8 @@ As SEO is an important consideration for this site, I have named URLs for SEO, t
 
 **Booking form:** The form includes a question 'Which course would you like to book' which I realise is not good user experience because the user would have already chosen their course and clicked the 'Book this course' button next to their chosen course.
 However, as the development of a solution that would automatically add the course name to the form is beyond the scope of this milestone project, I have deferred the development of that feature to future releases.  
+
+The form uses the 'Get' method instead of the 'Post' method because I wanted to send the user to a 'Thank you' page upon submission of the form. In future developments I would add a success message to the form using JavaScript.
 
 ### Accommodation page
 
@@ -117,18 +126,28 @@ I have not added a gallery of images in a different format to make up for it bec
 
 ## Technologies Used
 
-- This site was written in HTML5
-- I styled the HTML using CSS3. My CSS class naming convention is based on the BEM method.
+- HTML5: This site was written in HTML5
+- CSS3: I styled the HTML using CSS3. My CSS class naming convention is based on the BEM method.
 - [Bootstrap](https://getbootstrap.com/)
   - This project uses Bootstrap to speed up the development process. Some Bootstrap elements use Jquery, Popper.js and Javascript.
 
 ## Testing
 
+**Testing user stories** I tested each user story by clicking through each step outlined above in the User Stories section, to make sure I could find the information I would need if I were one of the users.
+
 **Colours:** I tested the colours I have used for navigation elements using the [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/) to ensure accessibility of all colours. I realised that a few of the colours I was using for the roll-over effects were not accessible and I have therefore chosen darker colours to ensure accessibility to WCAG AA standards. This has worked well as I now have deeper and richer colours for roll-overs but brighter colours for highlights which hint at the rich variety of experiences people can expect when they visit South Africa.
 
 **Forms:** I manually tested each of the forms on the website, making sure all required fields had to be completed before the form could be submitted and ensuring that the input validators are working. I also tested that when the form is submitted the user is notified that it has been submitted successfully - this notification comes in the form of a new page which says 'Thank you for ...'.
 
-**Links:** The site was tested for broken links using the [Broken Link Checker plugin from Atom SEO](https://error404.atomseo.com/SeoCheck/Report/jade-ux.github.io/2020-05-29/free?from=)
+To manually test each form I followed these steps:
+
+1. On each form I attempted to submit the form leaving all fields blank to ensure the error message sould show for all required fields. This showed that the required attribute was working on all required fields.
+2. For fields where the input data needs to be verified, such as the email address, I entered data that did not meet the requirements, such as an email address without the '@' symbol. Then I tried to submit the form and the error message showed, alerting me to fix the data in that field.
+3. I entered all fields with valid data and clicked the 'Send' button. I was taken to the 'Thank you' page which is as intended.
+
+**Links:** The site was tested for broken links using the [Dead Link Checker](https://www.deadlinkchecker.com/website-dead-link-checker.asp) and no broken links were found.
+
+I also manually tested that each link is going to the correct page by clicking each link.
 
 **Validating CSS:** I tested my CSS code using the [Jigsaw validator](https://jigsaw.w3.org/css-validator/validator) and the result was that no errors were found.
 
@@ -140,23 +159,10 @@ There were a few interesting bugs:
 - Also on the form there was an error on the label for the checkboxes group. Therefore I have added a legend instead of a label for the fieldset of checkboxes.
 - There is a warning on the date field as this is not supported in all browsers. However, I have chosen to leave it in and have conducted my own testing in Firefox, Chrome and Safari. In all of these the date option works as expected. In future, when I have completed the JavaScript module, I will add a pollyfill to fix this issue, [I have found a resource here that may fix the issue](https://github.com/jonstipe/date-polyfill/blob/master/date-polyfill.js).
 
-**Still to complete**//In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+**Responsive behaviour**
 
-//Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
-
-//For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
-
-1. Contact form:
-   1. Go to the "Contact Us" page
-   2. Try to submit the empty form and verify that an error message about the required fields appears
-   3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-   4. Try to submit the form with all inputs valid and verify that a success message appears.
-
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+- The site uses Bootstrap's breakpoints to break down content for small, medium and large screens, to provide a good user experience on any device. I have also added media queries to some content to ensure these sections would be optimally displayed on any screen size.
+- I have tested the site across various devices and using Chrome Developer tools, to ensure the content breaks at the points I intended for each screen size.
 
 ## Deployment
 
@@ -178,7 +184,7 @@ This site is deployed on GitHub pages and I deployed it in the following way:
 2. Click 'Clone or download'
 3. Click the icon to the right of the URL. This will allow you to clone the repository using HTTPS.
 4. If you would like to clone if using SSH, click 'Use SSH'
-5. Open Terminal locally
+5. On your computer open Git Bash
 6. Change the directory to the folder where you would like to run the cloned directory
 7. Type 'Git clone' and then paste the URL you copied from my repository in GitHub
 8. Press enter and your local clone of my site will be created.
