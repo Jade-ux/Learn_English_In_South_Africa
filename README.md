@@ -75,6 +75,8 @@ I created style mockups to test out colour combinations and styles for the site.
 **Colours:** The accent colours I have used, the pink, green, yellow and blue, are colours taken from the houses shown in the banner image on the home page. I have used these colours because they are vibrant and high-energy colours and will appeal to adventurous, energetic people looking for new learning experiences. 
 I added additional colours for roll-overs and active states which are much deeper and richer, which demonstrates the rich variety of experiences a student could expect in South Africa, and the country's rich cultural heritage.
 
+**Navigation links:** These are large buttons for large and smaller screens. I chose to keep these as buttons on smaller screens because I think they help encourage the user to click through to other pages and easily see where they are. Howevre, for phones with a width smaller than 374px I have changed this to a burger menu as the buttons do not fit well on those screen sizes.
+
 **Home button on navigation:** The logo at the top of the website and in the footer serve as the link to get back to the home page. However, when I tried to create the entire div as a link it broke the grid structure. Therefore I have created each individual element within the logo as a link. In future developments I plan to make the entire logo block a link in both the top and footer of the website.
 
 **Buttons:** There are two styles of buttons on the site. The outline buttons are for people in the first phase of the buying cycle and are still only looking around at information. The solid colour buttons are for people in the next buying phase who are ready to book a course or contact the agency.
@@ -136,7 +138,7 @@ I have not added a gallery of images in a different format to make up for it bec
 There were a few interesting bugs:
 - Enquire page: on the form there was an error on the select input field - if required you need either a size attribute greater than 1. Adding a size attribute broke the design as it was no longer a drop-down. I have therefore removed the 'required' attribute and will look for a solution in future releases.
 - Also on the form there was an error on the label for the checkboxes group. Therefore I have added a legend instead of a label for the fieldset of checkboxes.
-- There is a warning on the date field as this is not supported in all browsers. However, I have chosen to leave it in and have conducted my own testing in Firefox, Chrome and Safari. In all of these the date option works as expected.
+- There is a warning on the date field as this is not supported in all browsers. However, I have chosen to leave it in and have conducted my own testing in Firefox, Chrome and Safari. In all of these the date option works as expected. In future, when I have completed the JavaScript module, I will add a pollyfill to fix this issue, [I have found a resource here that may fix the issue](https://github.com/jonstipe/date-polyfill/blob/master/date-polyfill.js).
 
 **Still to complete**//In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
@@ -178,7 +180,7 @@ This site is deployed on GitHub pages and I deployed it in the following way:
 4. If you would like to clone if using SSH, click 'Use SSH'
 5. Open Terminal locally
 6. Change the directory to the folder where you would like to run the cloned directory
-7. Type 'Git clone' and then paste the URL you copied from my repository in GitHub 
+7. Type 'Git clone' and then paste the URL you copied from my repository in GitHub
 8. Press enter and your local clone of my site will be created.
 
 ## Credits

@@ -25,7 +25,7 @@
     <header>
       <div class="row no-gutters bg-color-title">
         <!--Logo-->
-        <div class="col-md-4">
+        <div class="col-12 col-lg-4">
           <div class="row">
             <div class="col-3 header__logo">
               <a href="index.html">
@@ -54,25 +54,20 @@
           </div>
         </div>
         <!--Menu-->
-        <div class="col-md-8">
-          <div class="row bg-color-name-title no-gutters">
-            <div class="col heading"></div>
-          </div>
-          <div class="row no-gutters">
-            <div class="col">
+        <div class="col-lg-8 col-12" role="navigation">
               <ul id="nav" class="list-inline menucontainer">
                 <li
-                  class="col-6 col-sm-3 list-inline-item border-bottom--green nav-item"
+                  class="col-6 col-lg-3 list-inline-item border-bottom--green nav-item"
                 >
                   <div class="border-left nav__courses-active">
                     <a href="english-courses.html"
                       ><i class="fa fa-user-graduate" aria-hidden="true"></i
-                      ><span>Courses</span></a
+                      ><span>Courses<span class="sr-only">(current)</span></span></a
                     >
                   </div>
                 </li>
                 <li
-                  class="col-6 col-sm-3 list-inline-item border-bottom--blue nav-item"
+                  class="col-6 col-lg-3 list-inline-item border-bottom--blue nav-item"
                 >
                   <div class="border-left nav__accommodation">
                     <a href="accommodation.html"
@@ -82,7 +77,7 @@
                   </div>
                 </li>
                 <li
-                  class="col-6 col-sm-3 list-inline-item border-bottom--yellow nav-item"
+                  class="col-6 col-lg-3 list-inline-item border-bottom--yellow nav-item"
                 >
                   <div class="border-left nav__experience">
                     <a href="experience-south-africa.html"
@@ -92,7 +87,7 @@
                   </div>
                 </li>
                 <li
-                  class="col-6 col-sm-3 list-inline-item border-bottom--pink nav-item"
+                  class="col-6 col-lg-3 list-inline-item border-bottom--pink nav-item"
                 >
                   <div class="border-left nav__enquire">
                     <a href="enquire-about-english-courses.html"
@@ -102,13 +97,10 @@
                   </div>
                 </li>
               </ul>
-            </div>
-          </div>
         </div>
       </div>
     </header>
     <!--Banner-->
-    <section>
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 hero-container border-bottom--green">
@@ -119,7 +111,6 @@
           </div>
         </div>
       </div>
-    </section>
     <!--Find your course section-->
     <section>
       <div class="container-fluid">
@@ -489,17 +480,6 @@
         <div class="row row__footer">
           <div class="col-12 col-md-4">
             <!--Logo-->
-            <div class="row">
-              <div class="col-2 footer__logo">
-                <a href="index.html">
-                  <img
-                    src="assets/img/sa-flag-speech.png"
-                    id="footer__logo-img"
-                    alt="logo"
-                /></a>
-              </div>
-
-              <div class="col-10">
                 <div class="row">
                   <div class="col-12">
                     <a href="index.html" id="footer__logo1">
@@ -514,25 +494,20 @@
                     >
                   </div>
                 </div>
-              </div>
-
               <p id="about">
                 Experience vibrant South Africa while you learn English.
                 World-class English courses, welcoming host families and a
                 variety of experiences to choose from.
               </p>
-            </div>
           </div>
           <div class="col-12 col-md-4 col__footer">
             <h3>Links</h3>
             <div class="row">
-              <div class="col-6">
-                <p><a href="english-courses.html">Courses</a></p>
-                <p><a href="accommodation.html">Accommodation</a></p>
+              <div class="col-12">
+                <p><a href="english-courses.html">Courses</a> | <a href="accommodation.html">Accommodation</a></p>
               </div>
-              <div class="col-6">
-                <p><a href="experience-south-africa.html">Experience</a></p>
-                <p><a href="enquire-about-english-courses.html">Enquire</a></p>
+              <div class="col-12">
+                <p><a href="experience-south-africa.html">Experience</a> | <a href="enquire-about-english-courses.html">Enquire</a></p>
               </div>
             </div>
           </div>
@@ -540,25 +515,25 @@
             <h3>Connect</h3>
             <ul class="list-inline">
               <li class="list-inline-item">
-                <a target="_blank" href="#">
+                <a target="_blank" href="https://www.facebook.com/jade.s.carvalho">
                   <i class="fa fa-facebook" aria-hidden="true"></i>
                   <span class="sr-only">Facebook</span>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a target="_blank" href="#">
+                <a target="_blank" href="https://twitter.com/ElpisJade">
                   <i class="fa fa-twitter" aria-hidden="true"></i>
                   <span class="sr-only">Twitter</span>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a target="_blank" href="#">
+                <a target="_blank" href="https://www.linkedin.com/in/jade-shannon-carvalho/">
                   <i class="fa fa-linkedin" aria-hidden="true"></i>
                   <span class="sr-only">LinkedIn</span>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a target="_blank" href="#">
+                <a target="_blank" href="https://www.instagram.com/jadeshannoncarvalho/">
                   <i class="fa fa-instagram" aria-hidden="true"></i>
                   <span class="sr-only">Instagram</span>
                 </a>
@@ -568,7 +543,7 @@
         </div>
       </div>
     </footer>
-    <!--Modal-->
+    <!--Modal for booking form-->
     <div class="modal" tabindex="-1" role="dialog" id="course-modal">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -669,6 +644,7 @@
                   class="form-control"
                   id="start_date"
                   name="start_date"
+                  min="2020-06-30" max="2021-06-30" 
                   required
                 />
               </div>

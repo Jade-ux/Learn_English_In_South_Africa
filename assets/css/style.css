@@ -149,7 +149,6 @@ h5 {
 }
 
 #nav li {
-  font-size: 14px;
   padding: 0;
 }
 
@@ -192,7 +191,7 @@ h5 {
   padding-top: 5px;
   text-align: center;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 0.9rem;
   font-weight: 300;
   letter-spacing: 2px;
 }
@@ -253,11 +252,15 @@ h5 {
   background-color: #b43c78;
 }
 
-/* Logo bottom margin for mobile*/
+/* Logo bottom margin and nav font size for mobile*/
 @media screen and (max-width: 767.98px) {
 
     .header__logo {
-    margin-bottom: 35px;
+        margin-bottom: 35px;
+    }
+
+    .nav-item span {
+        font-size: 0.7rem;
     }
 }
 
@@ -843,20 +846,21 @@ button[aria-expanded="false"] .fas.fa-minus {
 .row__footer {
   background-color: #313131;
   color: #fff;
-  padding: 30px 20px 20px 50px;
+  padding: 30px 20px 30px 20px;
 }
 
 .row__footer h1 {
   font-size: 120%;
   margin-bottom: 0px;
   margin-top: 0px;
+  text-align: center;
 }
 
 .row__footer h3 {
   font-size: 120%;
   margin-bottom: 20px;
-  text-align: left;
   color: #fff;
+  text-align: center;
 }
 
 .row__footer a {
@@ -870,12 +874,16 @@ button[aria-expanded="false"] .fas.fa-minus {
 }
 
 .row__footer p {
-  margin-right: 30px;
   color: #fff;
+  text-align: center;
 }
 
 #about {
   margin-top: 20px;
+}
+
+.footer__social-links {
+    text-align: center;
 }
 
 .footer__social-links li a i {
