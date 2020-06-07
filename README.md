@@ -35,37 +35,17 @@ Currently the site only allows users to book courses and browse the other option
 
 ## UX
 
-### User story one
+### User story 1
 
-As a prospective student I want to find and book the best English language course to suit my needs, in a country where I can practice speaking English to locals every day, and book my accommodation and activities all with one agency.
+As a prospective student I want to find and book the best English language course to suit my needs, in a country where I can practice speaking English to locals every day, and book my accommodation and activities all with one agency. I do not yet know where I want to study. 
 
-I do not yet know where I want to study. I land on the home page of this site, read through the 'Why study in South Africa?' section which convinces me that South Africa is a good place to study. Then I scroll to the 'Get started in 3 easy steps' section. 
-
-Here I find how the process will work with this agency. 
- 
-[See the user journey here](assets/user-stories/user-story1.jpg) 
-1. I click the 'Find your course' button to browse courses available
-2. On the Courses page I can quickly find the courses at my level and click to open the relevant accordion section. I find the course I like the sound of and click 'Book this course'.
-3. I complete the form and hit 'send'
-4. I am taken to the 'Thank you' page and from there either choose to leave the site or carry on browsing through to the accommodation page. 
-
-### User story two
+### User story 2
 
 As a prospective student I know I want to study English in South Africa. I would like to find and compare courses before booking. 
-[See the user journey here](assets/user-stories/user-story2.jpg) 
-1. From the home page I immediately click the 'Courses' navigational link.
-2. On the courses page I browse through the courses. When I have found the one I want to book I click 'Book this course'
-3. I complete the form and hit 'send'. 
-4. I am taken to the 'Thank you' page and from there click the button to browse through the accommodation options. From there I decide which type of accommodation I would like to choose.
 
-### User story two
+### User story 3
 
 As a prospective student I want to compare English language courses and book the best one for my needs. I would also like to book accommodation. I have reached the courses page of this site via a search engine (bypassing the home page). 
-[See the user journey here](assets/user-stories/user-story3.jpg)
-1. I browse the content in the accordions, finding the course I would like to apply for and click 'Book this course'. 
-2. Having completed the form I am taken to the 'Thank you' page. I am interested in booking accommodation for my stay in South Africa and click the 'Browse accommodation' button.
-3. On the Accommodation page I look through the types of accommodation and decide which I would prefer. Then, I scroll down to the '3 Easy steps' section and read about the process. I am interested in finding out more about the experiences and click the 'Choose your experiences' button.
-4. I read through the experiences and decide which I would like to take part in. From there I leave the site as I will wait to hear from the agency by email.
 
 ## Design
 
@@ -133,7 +113,39 @@ I have not added a gallery of images in a different format to make up for it bec
 
 ## Testing
 
-**Testing user stories** I tested each user story by clicking through each step outlined above in the User Stories section, to make sure I could find the information I would need if I were one of the users.
+### Testing user stories 
+
+I tested each user story by clicking through each step to make sure I could find the information I would need if I were one of the users:
+
+**Testing User Story 1:**
+
+I land on the home page of this site, read through the 'Why study in South Africa?' section which convinces me that South Africa is a good place to study. Then I scroll to the 'Get started in 3 easy steps' section. 
+
+Here I find how the process will work with this agency. 
+ 
+(assets/user-stories/user-story1.jpg) 
+1. I click the 'Find your course' button to browse courses available
+2. On the Courses page I can quickly find the courses at my level and click to open the relevant accordion section. I find the course I like the sound of and click 'Book this course'.
+3. I complete the form and hit 'send'
+4. I am taken to the 'Thank you' page and from there either choose to leave the site or carry on browsing through to the accommodation page. 
+
+**Testing User Story 2:**
+
+(assets/user-stories/user-story2.jpg) 
+
+1. From the home page I immediately click the 'Courses' navigational link.
+2. On the courses page I glance over the accordion titles, finding the catagory of courses that I want and click to open that accordion. When I have found the course I want to book I click 'Book this course'
+3. I complete the form and hit 'send'. 
+4. I am taken to the 'Thank you' page and from there click the button to browse through the accommodation options. From there I decide which type of accommodation I would like to choose.
+
+**Testing User Story 3:**
+
+(assets/user-stories/user-story3.jpg)
+
+1. I have landed on the Courses page from a search engine. I browse through the content in the accordions, finding the course I would like to apply for and click 'Book this course'. 
+2. Having completed the form I am taken to the 'Thank you' page. I am interested in booking accommodation for my stay in South Africa and click the 'Browse accommodation' button.
+3. On the Accommodation page I look through the types of accommodation and decide which I would prefer. Then, I scroll down to the '3 Easy steps' section and read about the process. I am interested in finding out more about the experiences and click the 'Choose your experiences' button.
+4. I read through the experiences and decide which I would like to take part in. From there I leave the site as I will wait to hear from the agency by email.
 
 **Colours:** I tested the colours I have used for navigation elements using the [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/) to ensure accessibility of all colours. I realised that a few of the colours I was using for the roll-over effects were not accessible and I have therefore chosen darker colours to ensure accessibility to WCAG AA standards. This has worked well as I now have deeper and richer colours for roll-overs but brighter colours for highlights which hint at the rich variety of experiences people can expect when they visit South Africa.
 
@@ -154,15 +166,15 @@ I also manually tested that each link is going to the correct page by clicking e
 **Validating markup:** My HTML was tested using the [W3C Markup Validation Service](https://validator.w3.org/). There were a few errors highlighted and I have fixed each one except for the following:
 - Heading warning on banner images - recommended to add header to the banner section, however, I do not want text over the banner and my next heading is one section down so I have left this as it is for now.
 
-There were a few interesting bugs:
-- Enquire page: on the form there was an error on the select input field - if required you need either a size attribute greater than 1. Adding a size attribute broke the design as it was no longer a drop-down. I have therefore removed the 'required' attribute and will look for a solution in future releases.
-- Also on the form there was an error on the label for the checkboxes group. Therefore I have added a legend instead of a label for the fieldset of checkboxes.
+There were a few interesting bugs on the forms:
+- An error on the label for the checkboxes group - therefore I have added a legend instead of a label for the fieldset of checkboxes. When I ran the code through the validator again this error did not come up.
 - There is a warning on the date field as this is not supported in all browsers. However, I have chosen to leave it in and have conducted my own testing in Firefox, Chrome and Safari. In all of these the date option works as expected. In future, when I have completed the JavaScript module, I will add a pollyfill to fix this issue, [I have found a resource here that may fix the issue](https://github.com/jonstipe/date-polyfill/blob/master/date-polyfill.js).
 
 **Responsive behaviour**
 
 - The site uses Bootstrap's breakpoints to break down content for small, medium and large screens, to provide a good user experience on any device. I have also added media queries to some content to ensure these sections would be optimally displayed on any screen size.
-- I have tested the site across various devices and using Chrome Developer tools, to ensure the content breaks at the points I intended for each screen size.
+- I have tested the site across various devices and browsers and using Chrome Developer tools and Mozilla developer tools, to ensure the content breaks at the points I intended for each screen size.
+- I have also tested each page of the site using [Google's automated mobile friendly test](https://search.google.com/test/mobile-friendly). The results showed the site is mobile-friendly, [see screenshot here](assets/user-stories/mobile-friendly-test.PNG).
 
 ## Deployment
 
