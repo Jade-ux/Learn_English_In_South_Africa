@@ -75,7 +75,6 @@ h2,
 h3 {
   font-family: "Ubuntu", sans-serif;
   margin-top: 20px;
-  color: #495057;
 }
 
 h1 {
@@ -90,11 +89,13 @@ h2 {
   margin: 20px 0px 20px 0px;
   text-align: center;
   font-weight: 500;
+  color: #495057;
 }
 
 h3 {
   font-size: 140%;
   margin-bottom: 25px;
+  color: #495057;
 }
 
 h4 {
@@ -493,60 +494,6 @@ h5 {
     color: #1A8199;
 }
 
-/*Desktop*/
-
-.steps-item {
-    border-top: #fe7fbf 2px solid;
-    margin-top: 40px;
-    position: relative;
-}
-
-.steps-item:before {
-  content: attr(data-step);
-  position: absolute;
-  top: -0.7em;
-  left: 0em;
-  display: block;
-  font-weight: 500;
-  font-size: 1.8em;
-  padding: 13px;
-  line-height: 13px;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  margin: 0;
-  background-color: #fe7fbf;
-  color: white;
-}
-
-/*Mobile*/
-
-@media screen and (max-width: 767.98px) {
-
-    .steps-item {
-        border-left: #fe7fbf 2px solid;
-        border-top: none;
-        margin-top: 0px;
-    }
-
-    .steps-item:before {
-        content: attr(data-step);
-        left: -0.7em;
-        top: 1em;
-        margin: 0;
-    }
-
-    .steps-item h4 {
-        margin-left: 30px;
-    }
-
-    .row__steps span {
-        margin-left: 30px;
-        margin-top: 30px;
-        margin-bottom: 20px;
-    }
-}
-
 .row__steps p {
   text-align: center;
   font-size: 1.1em;
@@ -591,6 +538,60 @@ h5 {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+/*Sets display of steps for Desktop*/
+
+.steps-item {
+    border-top: #fe7fbf 2px solid;
+    margin-top: 40px;
+    position: relative;
+}
+
+.steps-item:before {
+  content: attr(data-step);
+  position: absolute;
+  top: -0.7em;
+  left: 0em;
+  display: block;
+  font-weight: 500;
+  font-size: 1.8em;
+  padding: 13px;
+  line-height: 13px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin: 0;
+  background-color: #fe7fbf;
+  color: white;
+}
+
+/*Sets display of steps for Mobile*/
+
+@media screen and (max-width: 767.98px) {
+
+    .steps-item {
+        border-left: #fe7fbf 2px solid;
+        border-top: none;
+        margin-top: 0px;
+    }
+
+    .steps-item:before {
+        content: attr(data-step);
+        left: -0.7em;
+        top: 1em;
+        margin: 0;
+    }
+
+    .steps-item h4 {
+        margin-left: 30px;
+    }
+
+    .row__steps span {
+        margin-left: 30px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
 }
 
 /*-------------------------------------------------Courses page*/
@@ -725,6 +726,8 @@ button[aria-expanded="false"] .fas.fa-minus {
   font-size: 100%;
 }
 
+/*Mobile display*/
+
 @media screen and (max-width: 767.98px) {
   .accordion__left-col {
     text-align: left;
@@ -810,6 +813,8 @@ button[aria-expanded="false"] .fas.fa-minus {
     border-right: none;
     border-bottom: none;
 }
+
+/*Mobile display of tabs*/
 
 @media screen and (max-width: 767.98px) {
     .nav-tabs .nav-link {

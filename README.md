@@ -24,14 +24,14 @@ Currently the site only allows users to book courses and browse the other option
 
 ## Core requirements
 
--	The website should allow users to translate the contents using their browser’s translator – therefore most content should be in the form of text and not text in images
--	Iconography should be used to help users navigate the site
--	Icons should be internationally recognized as associated with the content they are referring to
--	Images should illustrate the experience of studying in SA 
+-	The website should allow users to translate the contents using their browser’s translator – therefore most content should be in the form of text and not text in images.
+-	Iconography should be used to help users navigate the site.
+-	Icons should be internationally recognized as associated with the content they are referring to.
+-	Images should illustrate the experience of studying in SA. 
 -	As this is a B2C site, users are likely to make decisions based largely on emotional responses. Therefore images and design should be welcoming and reassuring as well as compelling and, as much as possible, universally representative.
--	Must be optimised for search engines
+-	Must be optimised for search engines.
 -	Users would expect an intuitive journey and would want to find out information quickly therefore I have made the menu bold and clear.
--	Mobile design important as many users will be navigating on their phones
+-	Mobile design is important as many users will be navigating on their phones.
 
 ## UX
 
@@ -123,7 +123,7 @@ I land on the home page of this site, read through the 'Why study in South Afric
 
 Here I find how the process will work with this agency. 
  
-(assets/user-stories/user-story1.jpg) 
+![Image of User Story 1](assets/user-stories/user-story1.jpg) 
 1. I click the 'Find your course' button to browse courses available
 2. On the Courses page I can quickly find the courses at my level and click to open the relevant accordion section. I find the course I like the sound of and click 'Book this course'.
 3. I complete the form and hit 'send'
@@ -131,7 +131,7 @@ Here I find how the process will work with this agency.
 
 **Testing User Story 2:**
 
-(assets/user-stories/user-story2.jpg) 
+![Image of User Story 2](assets/user-stories/user-story2.jpg) 
 
 1. From the home page I immediately click the 'Courses' navigational link.
 2. On the courses page I glance over the accordion titles, finding the catagory of courses that I want and click to open that accordion. When I have found the course I want to book I click 'Book this course'
@@ -140,16 +140,20 @@ Here I find how the process will work with this agency.
 
 **Testing User Story 3:**
 
-(assets/user-stories/user-story3.jpg)
+![Image of User Story 3](assets/user-stories/user-story3.jpg)
 
 1. I have landed on the Courses page from a search engine. I browse through the content in the accordions, finding the course I would like to apply for and click 'Book this course'. 
 2. Having completed the form I am taken to the 'Thank you' page. I am interested in booking accommodation for my stay in South Africa and click the 'Browse accommodation' button.
 3. On the Accommodation page I look through the types of accommodation and decide which I would prefer. Then, I scroll down to the '3 Easy steps' section and read about the process. I am interested in finding out more about the experiences and click the 'Choose your experiences' button.
 4. I read through the experiences and decide which I would like to take part in. From there I leave the site as I will wait to hear from the agency by email.
 
-**Colours:** I tested the colours I have used for navigation elements using the [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/) to ensure accessibility of all colours. I realised that a few of the colours I was using for the roll-over effects were not accessible and I have therefore chosen darker colours to ensure accessibility to WCAG AA standards. This has worked well as I now have deeper and richer colours for roll-overs but brighter colours for highlights which hint at the rich variety of experiences people can expect when they visit South Africa.
+### Colours
 
-**Forms:** I manually tested each of the forms on the website, making sure all required fields had to be completed before the form could be submitted and ensuring that the input validators are working. I also tested that when the form is submitted the user is notified that it has been submitted successfully - this notification comes in the form of a new page which says 'Thank you for ...'.
+I tested the colours I have used for navigation elements using the [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/) to ensure accessibility of all colours. I realised that a few of the colours I was using for the roll-over effects were not accessible and I have therefore chosen darker colours to ensure accessibility to WCAG AA standards. This has worked well as I now have deeper and richer colours for roll-overs but brighter colours for highlights which hint at the rich variety of experiences people can expect when they visit South Africa.
+
+### Forms
+
+I manually tested each of the forms on the website, making sure all required fields had to be completed before the form could be submitted and ensuring that the input validators are working. I also tested that when the form is submitted the user is notified that it has been submitted successfully - this notification comes in the form of a new page which says 'Thank you for ...'.
 
 To manually test each form I followed these steps:
 
@@ -157,20 +161,26 @@ To manually test each form I followed these steps:
 2. For fields where the input data needs to be verified, such as the email address, I entered data that did not meet the requirements, such as an email address without the '@' symbol. Then I tried to submit the form and the error message showed, alerting me to fix the data in that field.
 3. I entered all fields with valid data and clicked the 'Send' button. I was taken to the 'Thank you' page which is as intended.
 
-**Links:** The site was tested for broken links using the [Dead Link Checker](https://www.deadlinkchecker.com/website-dead-link-checker.asp) and no broken links were found.
+### Links
+
+The site was tested for broken links using the [Dead Link Checker](https://www.deadlinkchecker.com/website-dead-link-checker.asp) and no broken links were found.
 
 I also manually tested that each link is going to the correct page by clicking each link.
 
-**Validating CSS:** I tested my CSS code using the [Jigsaw validator](https://jigsaw.w3.org/css-validator/validator) and the result was that no errors were found.
+### Validating CSS
 
-**Validating markup:** My HTML was tested using the [W3C Markup Validation Service](https://validator.w3.org/). There were a few errors highlighted and I have fixed each one except for the following:
+I tested my CSS code using the [Jigsaw validator](https://jigsaw.w3.org/css-validator/validator) and the result was that no errors were found.
+
+### Validating markup
+
+My HTML was tested using the [W3C Markup Validation Service](https://validator.w3.org/). There were a few errors highlighted and I have fixed each one except for the following:
 - Heading warning on banner images - recommended to add header to the banner section, however, I do not want text over the banner and my next heading is one section down so I have left this as it is for now.
 
 There were a few interesting bugs on the forms:
 - An error on the label for the checkboxes group - therefore I have added a legend instead of a label for the fieldset of checkboxes. When I ran the code through the validator again this error did not come up.
 - There is a warning on the date field as this is not supported in all browsers. However, I have chosen to leave it in and have conducted my own testing in Firefox, Chrome and Safari. In all of these the date option works as expected. In future, when I have completed the JavaScript module, I will add a pollyfill to fix this issue, [I have found a resource here that may fix the issue](https://github.com/jonstipe/date-polyfill/blob/master/date-polyfill.js).
 
-**Responsive behaviour**
+### Responsive behaviour
 
 - The site uses Bootstrap's breakpoints to break down content for small, medium and large screens, to provide a good user experience on any device. I have also added media queries to some content to ensure these sections would be optimally displayed on any screen size.
 - I have tested the site across various devices and browsers and using Chrome Developer tools and Mozilla developer tools, to ensure the content breaks at the points I intended for each screen size.
