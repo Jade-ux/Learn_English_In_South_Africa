@@ -55,11 +55,11 @@ I created mockups before building the site. This helped me plan how to structure
 
 After beginning the development of the website I changed a few of the design elements and features such as the banner. In the wireframes you will see the banner is a carousel image with a small text box over it. I learnt that carousels are not accessible and therefore changed the banner to a static image. I also realised the text over the banner would not work well on mobile devices and left that off the final design.
 
-I created style mockups to test out colour combinations and styles for the site. 
+I created style mockups in Photoshop to test out colour combinations and styles for the site. These mockups also helped me understand how to break up the content using the Bootstrap grid system - I used rulers in Photoshop to break each page into 12 columns so that I could see which column sizes to use for each seciton.
 
 [Home page mockup](assets/mockups-and-wireframes/styles-mockup--home-pg.jpg)
 
-**Colours:** The accent colours I have used, the pink, green, yellow and blue, are colours taken from the houses shown in the banner image on the home page. I have used these colours because they are vibrant and high-energy colours and will appeal to adventurous, energetic people looking for new learning experiences. 
+**Colours:** The accent colours I have used: the pink, green, yellow and blue; are colours taken from the houses shown in the banner image on the home page. I have used these colours because they are vibrant and high-energy colours and will appeal to adventurous, energetic people looking for new learning experiences. 
 I added additional colours for roll-overs and active states which are much deeper and richer, which demonstrates the rich variety of experiences a student could expect in South Africa, and the country's rich cultural heritage.
 
 **Navigation links:** These are large buttons for large and smaller screens. I chose to keep these as buttons on smaller screens because I think they help encourage the user to click through to other pages and easily see where they are. Howevre, for phones with a width smaller than 374px I have changed this to a burger menu as the buttons do not fit well on those screen sizes.
@@ -68,7 +68,7 @@ I added additional colours for roll-overs and active states which are much deepe
 
 **Buttons:** There are two styles of buttons on the site. The outline buttons are for people in the first phase of the buying cycle and are still only looking around at information. The solid colour buttons are for people in the next buying phase who are ready to book a course or contact the agency. The colours of the buttons or the colour of the hover effects are linked to the content for instance, all buttons to the courses page will be green or green on hover.
 
-## URL naming
+### URL naming
 
 As SEO is an important consideration for this site, I have named URLs for SEO, therefore the 'Courses' page URL is 'english-courses'
 
@@ -183,6 +183,7 @@ There were a few interesting bugs on the forms:
 ### Responsive behaviour
 
 - The site uses Bootstrap's breakpoints to break down content for small, medium and large screens, to provide a good user experience on any device. I have also added media queries to some content to ensure these sections would be optimally displayed on any screen size.
+- The 3 Easy Steps section required different layouts for desktop and mobile and I have added media queries to break the content down for small screens so that the steps stack one under the other.
 - I have tested the site across various devices and browsers and using Chrome Developer tools and Mozilla developer tools, to ensure the content breaks at the points I intended for each screen size.
 - I have also tested each page of the site using [Google's automated mobile friendly test](https://search.google.com/test/mobile-friendly). The results showed the site is mobile-friendly, [see screenshot here](assets/user-stories/mobile-friendly-test.PNG).
 
